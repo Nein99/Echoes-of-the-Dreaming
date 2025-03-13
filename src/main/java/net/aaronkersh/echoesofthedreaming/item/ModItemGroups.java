@@ -1,5 +1,6 @@
 package net.aaronkersh.echoesofthedreaming.item;
 
+import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.aaronkersh.echoesofthedreaming.EchoesOfTheDreaming;
 import net.minecraft.item.ItemGroup;
@@ -17,6 +18,11 @@ public class ModItemGroups {
                         entries.add(ModItems.MOURNCRYST);
                         entries.add(ModItems.MOURNCRYST_BLACKENED);
                         entries.add(ModItems.MOURNSTEEL_INGOT);
+
+                        entries.add(ModBlocks.MOURNSTEEL_BLOCK);
+                        entries.add(ModBlocks.MOURNCRYST_BLOCK);
+                        entries.add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
+                        entries.add(ModBlocks.MOURNCRYST_ORE);
 
                     }).build());
 

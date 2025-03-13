@@ -1,9 +1,10 @@
 package net.aaronkersh.echoesofthedreaming;
 
+import net.aaronkersh.echoesofthedreaming.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
-import net.aaronkersh.echoesofthedreaming.item.ModItemGroups;
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
+import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +16,6 @@ public class EchoesOfTheDreaming implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

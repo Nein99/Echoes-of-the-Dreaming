@@ -3,5 +3,10 @@
   "item.echoesofthedreaming.mourncryst": "Mourncryst",
   "item.echoesofthedreaming.mourncryst_blackened": "Blackened Mourncryst",
 
+  "block.echoesofthedreaming.mournsteel_block": "Block of Mournsteel",
+  "block.echoesofthedreaming.mourncryst_block": "Block of Mourncryst",
+  "block.echoesofthedreaming.mourncryst_blackened_block": "Block of Blackened Mourncryst",
+  "block.echoesofthedreaming.mourncryst_ore": "Mourncryst Ore",
+
   "itemgroup.echoesofthedreaming": "Echoes of the Dreaming"
 }

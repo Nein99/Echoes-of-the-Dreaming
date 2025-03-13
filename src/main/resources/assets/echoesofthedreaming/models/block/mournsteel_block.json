@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "echoesofthedreaming:block/mournsteel_block"
+  }
+}
