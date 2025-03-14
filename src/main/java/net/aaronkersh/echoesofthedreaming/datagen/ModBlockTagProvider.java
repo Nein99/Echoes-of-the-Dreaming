@@ -23,7 +23,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOURNCRYST_DEEPSLATE_ORE)
                 .add(ModBlocks.MOURNCRYST_BLOCK)
                 .add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK)
-                .add(ModBlocks.MOURNSTEEL_BLOCK);
+                .add(ModBlocks.MOURNSTEEL_BLOCK)
+                .add(ModBlocks.VANADINITE_ORE)
+                .add(ModBlocks.VANADINITE_DEEPSLATE_ORE)
+                .add(ModBlocks.VANADINITE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.VANADINITE_ORE)
+                .add(ModBlocks.VANADINITE_DEEPSLATE_ORE)
+                .add(ModBlocks.VANADINITE_BLOCK)
+                .add(ModBlocks.VANADIUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MOURNCRYST_ORE)

@@ -25,6 +25,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
                         entries.add(ModBlocks.MOURNSTEEL_BLOCK);
 
+                        entries.add(ModItems.VANADINITE);
+                        entries.add(ModBlocks.VANADINITE_ORE);
+                        entries.add(ModBlocks.VANADINITE_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.VANADINITE_BLOCK);
+
+                        entries.add(ModItems.VANADIUM);
+                        entries.add(ModBlocks.VANADIUM_BLOCK);
+
                     }).build());
 
 

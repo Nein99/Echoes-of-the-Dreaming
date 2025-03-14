@@ -14,11 +14,14 @@ public class ModItems {
     public static final Item MOURNSTEEL_INGOT = registerItem("mournsteel_ingot", new Item(new FabricItemSettings()));
     public static final Item MOURNCRYST = registerItem("mourncryst", new Item(new FabricItemSettings()));
     public static final Item MOURNCRYST_BLACKENED = registerItem("mourncryst_blackened", new Item(new FabricItemSettings()));
+    public static final Item VANADINITE = registerItem("vanadinite", new Item(new FabricItemSettings()));
+    public static final Item VANADIUM = registerItem("vanadium", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(MOURNSTEEL_INGOT);
         entries.add(MOURNCRYST);
         entries.add(MOURNCRYST_BLACKENED);
+        entries.add(VANADINITE);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(EchoesOfTheDreaming.MOD_ID, name), item);

@@ -23,6 +23,14 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE)));
     public static final Block MOURNCRYST_DEEPSLATE_ORE = registerBlock("mourncryst_deepslate_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE)));
+    public static final Block VANADINITE_BLOCK = registerBlock("vanadinite_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block VANADINITE_ORE = registerBlock("vanadinite_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block VANADINITE_DEEPSLATE_ORE = registerBlock("vanadinite_deepslate_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block VANADIUM_BLOCK = registerBlock("vanadium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL)));
 
 
     private static Block registerBlock(String name, Block block) {

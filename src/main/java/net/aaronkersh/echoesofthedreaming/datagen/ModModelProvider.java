@@ -20,6 +20,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOURNCRYST_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOURNSTEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VANADINITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VANADINITE_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VANADINITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VANADIUM_BLOCK);
     }
 
     @Override
@@ -27,5 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MOURNCRYST, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOURNCRYST_BLACKENED, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOURNSTEEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VANADINITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VANADIUM, Models.GENERATED);
     }
 }
