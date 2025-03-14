@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "echoesofthedreaming:block/mourncryst_block"
-  }
-}
