@@ -21,6 +21,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.METAL)));
     public static final Block MOURNCRYST_ORE = registerBlock("mourncryst_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE)));
+    public static final Block MOURNCRYST_DEEPSLATE_ORE = registerBlock("mourncryst_deepslate_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE)));
 
 
     private static Block registerBlock(String name, Block block) {

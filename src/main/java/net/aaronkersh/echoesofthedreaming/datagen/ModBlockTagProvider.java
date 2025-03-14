@@ -20,12 +20,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MOURNCRYST_ORE)
+                .add(ModBlocks.MOURNCRYST_DEEPSLATE_ORE)
                 .add(ModBlocks.MOURNCRYST_BLOCK)
                 .add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK)
                 .add(ModBlocks.MOURNSTEEL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MOURNCRYST_ORE)
+                .add(ModBlocks.MOURNCRYST_DEEPSLATE_ORE)
                 .add(ModBlocks.MOURNCRYST_BLOCK)
                 .add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
 
