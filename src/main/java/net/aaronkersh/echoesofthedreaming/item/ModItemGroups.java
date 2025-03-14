@@ -37,6 +37,8 @@ public class ModItemGroups {
                         entries.add(ModItems.BISMUTH);
                         entries.add(ModBlocks.BISMUTH_BLOCK);
 
+                        entries.add(ModItems.PLANAR_TUNING_FORK);
+
                     }).build());
 
 

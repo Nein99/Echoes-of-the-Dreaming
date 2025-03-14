@@ -36,6 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VANADIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PLANAR_TUNING_FORK, Models.GENERATED);
 
     }
 }

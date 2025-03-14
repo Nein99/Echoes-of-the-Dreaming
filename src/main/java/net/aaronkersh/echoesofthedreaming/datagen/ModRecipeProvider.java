@@ -54,5 +54,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MOURNCRYST_BLACKENED), conditionsFromItem(ModItems.MOURNCRYST_BLACKENED))
                 .criterion(hasItem(ModItems.VANADIUM), conditionsFromItem(ModItems.VANADIUM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MOURNSTEEL_INGOT)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLANAR_TUNING_FORK, 1)
+                .input(ModItems.MOURNSTEEL_INGOT, 1)
+                .input(ModItems.BISMUTH, 1)
+                .criterion(hasItem(ModItems.MOURNSTEEL_INGOT), conditionsFromItem(ModItems.MOURNSTEEL_INGOT))
+                .criterion(hasItem(ModItems.BISMUTH), conditionsFromItem(ModItems.BISMUTH))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLANAR_TUNING_FORK)));
     }
 }
