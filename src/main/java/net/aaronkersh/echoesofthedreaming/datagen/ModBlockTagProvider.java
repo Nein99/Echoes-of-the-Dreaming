@@ -1,5 +1,4 @@
 package net.aaronkersh.echoesofthedreaming.datagen;
-
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
@@ -26,7 +25,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOURNSTEEL_BLOCK)
                 .add(ModBlocks.VANADINITE_ORE)
                 .add(ModBlocks.VANADINITE_DEEPSLATE_ORE)
-                .add(ModBlocks.VANADINITE_BLOCK);
+                .add(ModBlocks.VANADINITE_BLOCK)
+                .add(ModBlocks.VANADIUM_BLOCK)
+                .add(ModBlocks.BISMUTH_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.BISMUTH_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.VANADINITE_ORE)

@@ -29,6 +29,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOURNSTEEL_BLOCK);
         addDrop(ModBlocks.VANADINITE_BLOCK);
         addDrop(ModBlocks.VANADIUM_BLOCK);
+        addDrop(ModBlocks.BISMUTH_BLOCK);
 
         addDrop(ModBlocks.MOURNCRYST_ORE, copperLikeOreDrops(ModBlocks.MOURNCRYST_ORE, ModItems.MOURNCRYST));
         addDrop(ModBlocks.MOURNCRYST_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.MOURNCRYST_DEEPSLATE_ORE, ModItems.MOURNCRYST));

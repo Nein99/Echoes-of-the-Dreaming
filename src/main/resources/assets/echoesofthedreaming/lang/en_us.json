@@ -4,7 +4,8 @@
   "item.echoesofthedreaming.mourncryst_blackened": "Blackened Mourncryst",
   "item.echoesofthedreaming.vanadinite": "Vanadinite",
   "item.echoesofthedreaming.vanadium": "Vanadium",
-
+  "item.echoesofthedreaming.raw_bismuth": "Raw Bismuth",
+  "item.echoesofthedreaming.bismuth": "Bismuth Ingot",
 
   "block.echoesofthedreaming.mournsteel_block": "Block of Mournsteel",
   "block.echoesofthedreaming.mourncryst_block": "Block of Mourncryst",
@@ -15,6 +16,7 @@
   "block.echoesofthedreaming.vanadinite_deepslate_ore": "Deepslate Vanadinite Ore",
   "block.echoesofthedreaming.vanadinite_block": "Block of Vanadinite",
   "block.echoesofthedreaming.vanadium_block": "Block of Vanadium",
+  "block.echoesofthedreaming.bismuth_block": "Block of Bismuth",
 
   "itemgroup.echoesofthedreaming": "Echoes of the Dreaming"
 }

@@ -31,6 +31,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).sounds(BlockSoundGroup.STONE)));
     public static final Block VANADIUM_BLOCK = registerBlock("vanadium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block BISMUTH_BLOCK = registerBlock("bismuth_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
 
 
     private static Block registerBlock(String name, Block block) {

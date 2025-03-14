@@ -33,6 +33,10 @@ public class ModItemGroups {
                         entries.add(ModItems.VANADIUM);
                         entries.add(ModBlocks.VANADIUM_BLOCK);
 
+                        entries.add(ModItems.RAW_BISMUTH);
+                        entries.add(ModItems.BISMUTH);
+                        entries.add(ModBlocks.BISMUTH_BLOCK);
+
                     }).build());
 
 

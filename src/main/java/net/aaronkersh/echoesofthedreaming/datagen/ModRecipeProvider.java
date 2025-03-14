@@ -18,6 +18,7 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> MOURNCRYST_SMELTABLES = List.of(ModBlocks.MOURNCRYST_BLOCK);
     private static final List<ItemConvertible> VANADINITE_SMELTABLES = List.of(ModBlocks.VANADINITE_ORE, ModBlocks.VANADINITE_DEEPSLATE_ORE);
+    private static final List<ItemConvertible> BISMUTH_SMELTABLES = List.of(ModItems.RAW_BISMUTH);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -33,10 +34,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, VANADINITE_SMELTABLES, RecipeCategory.MISC, ModItems.VANADIUM,
                 0.7f, 100, "vanadium");
 
+        offerSmelting(exporter, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH,
+                0.7f, 100, "bismuth");
+        offerBlasting(exporter, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH,
+                0.7f, 100, "bismuth");
+
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOURNCRYST, RecipeCategory.DECORATIONS,
                 ModBlocks.MOURNCRYST_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOURNCRYST_BLACKENED, RecipeCategory.DECORATIONS,
                 ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BISMUTH, RecipeCategory.DECORATIONS,
+                ModBlocks.BISMUTH_BLOCK);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MOURNSTEEL_INGOT, 1)
                 .input(Items.IRON_INGOT, 7)
