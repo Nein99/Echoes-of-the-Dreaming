@@ -38,5 +38,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLANAR_TUNING_FORK, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.MOURNSTEEL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MOURNSTEEL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MOURNSTEEL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MOURNSTEEL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MOURNSTEEL_HOE, Models.HANDHELD);
+
     }
 }

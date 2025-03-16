@@ -8,6 +8,13 @@
   "item.echoesofthedreaming.bismuth": "Bismuth Ingot",
   "item.echoesofthedreaming.planar_tuning_fork": "Planar Tuning Fork",
 
+  "item.echoesofthedreaming.mournsteel_sword": "Mournsteel Sword",
+  "item.echoesofthedreaming.mournsteel_pickaxe": "Mournsteel Pickaxe",
+  "item.echoesofthedreaming.mournsteel_axe": "Mournsteel Axe",
+  "item.echoesofthedreaming.mournsteel_shovel": "Mournsteel Shovel",
+  "item.echoesofthedreaming.mournsteel_hoe": "Mournsteel Hoe",
+
+
   "block.echoesofthedreaming.mournsteel_block": "Block of Mournsteel",
   "block.echoesofthedreaming.mourncryst_block": "Block of Mourncryst",
   "block.echoesofthedreaming.mourncryst_blackened_block": "Block of Blackened Mourncryst",

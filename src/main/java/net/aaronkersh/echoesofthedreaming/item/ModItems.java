@@ -9,6 +9,7 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.item.*;
 
 public class ModItems {
     public static final Item MOURNSTEEL_INGOT = registerItem("mournsteel_ingot", new Item(new FabricItemSettings()));
@@ -19,6 +20,17 @@ public class ModItems {
     public static final Item RAW_BISMUTH = registerItem("raw_bismuth", new Item(new FabricItemSettings()));
     public static final Item BISMUTH = registerItem("bismuth", new Item(new FabricItemSettings()));
     public static final Item PLANAR_TUNING_FORK = registerItem("planar_tuning_fork", new Item(new FabricItemSettings()));
+
+    public static final Item MOURNSTEEL_PICKAXE = registerItem("mournsteel_pickaxe",
+            new PickaxeItem(ModToolMaterial.MOURNSTEEL, 2, 2f, new FabricItemSettings()));
+    public static final Item MOURNSTEEL_AXE = registerItem("mournsteel_axe",
+            new AxeItem(ModToolMaterial.MOURNSTEEL, 3, 1f, new FabricItemSettings()));
+    public static final Item MOURNSTEEL_SHOVEL = registerItem("mournsteel_shovel",
+            new ShovelItem(ModToolMaterial.MOURNSTEEL, 0, 0f, new FabricItemSettings()));
+    public static final Item MOURNSTEEL_SWORD = registerItem("mournsteel_sword",
+            new SwordItem(ModToolMaterial.MOURNSTEEL, 5, 3f, new FabricItemSettings()));
+    public static final Item MOURNSTEEL_HOE = registerItem("mournsteel_hoe",
+            new HoeItem(ModToolMaterial.MOURNSTEEL, 0, 0f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
