@@ -1,6 +1,8 @@
 package net.aaronkersh.echoesofthedreaming;
 
+import net.aaronkersh.echoesofthedreaming.effect.ModEffects;
 import net.aaronkersh.echoesofthedreaming.item.ModItemGroups;
+import net.aaronkersh.echoesofthedreaming.potion.ModPotions;
 import net.fabricmc.api.ModInitializer;
 
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
@@ -19,5 +21,7 @@ public class EchoesOfTheDreaming implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 	}
 }

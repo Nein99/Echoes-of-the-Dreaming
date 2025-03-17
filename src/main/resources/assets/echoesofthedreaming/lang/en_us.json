@@ -14,6 +14,11 @@
   "item.echoesofthedreaming.mournsteel_shovel": "Mournsteel Shovel",
   "item.echoesofthedreaming.mournsteel_hoe": "Mournsteel Hoe",
 
+  "item.minecraft.potion.effect.malignant_aura_potion": "Malignant Potion",
+  "item.minecraft.splash_potion.effect.malignant_aura_potion": "Malignant Splash Potion",
+  "item.minecraft.lingering_potion.effect.malignant_aura_potion": "Malignant Lingering Potion",
+  "item.minecraft.tipped_arrow.effect.malignant_aura_potion": "Malignant Arrow",
+
 
   "block.echoesofthedreaming.mournsteel_block": "Block of Mournsteel",
   "block.echoesofthedreaming.mourncryst_block": "Block of Mourncryst",
@@ -26,5 +31,7 @@
   "block.echoesofthedreaming.vanadium_block": "Block of Vanadium",
   "block.echoesofthedreaming.bismuth_block": "Block of Bismuth",
 
-  "itemgroup.echoesofthedreaming": "Echoes of the Dreaming"
+  "itemgroup.echoesofthedreaming": "Echoes of the Dreaming",
+
+  "effect.echoesofthedreaming.malignant_aura": "Malignant Aura"
 }
