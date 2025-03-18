@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.aaronkersh.echoesofthedreaming.EchoesOfTheDreaming;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -34,7 +35,7 @@ public class ModBlocks {
     public static final Block BISMUTH_BLOCK = registerBlock("bismuth_block",
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
     public static final Block BISMUTH_SAND = registerBlock("bismuth_sand",
-            new Block(FabricBlockSettings.copyOf(Blocks.SAND).sounds(BlockSoundGroup.SAND)));
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND).sounds(BlockSoundGroup.SAND)));
 
 
     private static Block registerBlock(String name, Block block) {
