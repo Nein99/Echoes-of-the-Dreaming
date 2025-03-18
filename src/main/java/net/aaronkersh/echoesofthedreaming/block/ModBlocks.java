@@ -33,6 +33,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL)));
     public static final Block BISMUTH_BLOCK = registerBlock("bismuth_block",
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block BISMUTH_SAND = registerBlock("bismuth_sand",
+            new Block(FabricBlockSettings.copyOf(Blocks.SAND).sounds(BlockSoundGroup.SAND)));
 
 
     private static Block registerBlock(String name, Block block) {

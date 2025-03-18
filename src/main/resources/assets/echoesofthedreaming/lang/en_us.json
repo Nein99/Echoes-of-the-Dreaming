@@ -1,11 +1,13 @@
 {
   "item.echoesofthedreaming.mournsteel_ingot": "Mournsteel Ingot",
+  "item.echoesofthedreaming.mournsteel_nugget": "Mournsteel Nugget",
   "item.echoesofthedreaming.mourncryst": "Mourncryst",
   "item.echoesofthedreaming.mourncryst_blackened": "Blackened Mourncryst",
   "item.echoesofthedreaming.vanadinite": "Vanadinite",
   "item.echoesofthedreaming.vanadium": "Vanadium",
   "item.echoesofthedreaming.raw_bismuth": "Raw Bismuth",
   "item.echoesofthedreaming.bismuth": "Bismuth Ingot",
+  "item.echoesofthedreaming.powdered_bismuth": "Powdered Bismuth",
   "item.echoesofthedreaming.planar_tuning_fork": "Planar Tuning Fork",
 
   "item.echoesofthedreaming.mournsteel_sword": "Mournsteel Sword",
@@ -30,6 +32,7 @@
   "block.echoesofthedreaming.vanadinite_block": "Block of Vanadinite",
   "block.echoesofthedreaming.vanadium_block": "Block of Vanadium",
   "block.echoesofthedreaming.bismuth_block": "Block of Bismuth",
+  "block.echoesofthedreaming.bismuth_sand": "Bismuth Sand",
 
   "itemgroup.echoesofthedreaming": "Echoes of the Dreaming",
 

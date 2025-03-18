@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MOURNCRYST);
                         entries.add(ModItems.MOURNCRYST_BLACKENED);
                         entries.add(ModItems.MOURNSTEEL_INGOT);
+                        entries.add(ModItems.MOURNSTEEL_NUGGET);
 
                         entries.add(ModBlocks.MOURNCRYST_ORE);
                         entries.add(ModBlocks.MOURNCRYST_DEEPSLATE_ORE);
@@ -36,6 +37,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_BISMUTH);
                         entries.add(ModItems.BISMUTH);
                         entries.add(ModBlocks.BISMUTH_BLOCK);
+                        entries.add(ModItems.POWDERED_BISMUTH);
+                        entries.add(ModBlocks.BISMUTH_SAND);
 
                         entries.add(ModItems.PLANAR_TUNING_FORK);
 

@@ -43,8 +43,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 ModBlocks.MOURNCRYST_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOURNCRYST_BLACKENED, RecipeCategory.DECORATIONS,
                 ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.VANADINITE, RecipeCategory.DECORATIONS,
+                ModBlocks.VANADINITE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.VANADIUM, RecipeCategory.DECORATIONS,
+                ModBlocks.VANADIUM_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BISMUTH, RecipeCategory.DECORATIONS,
                 ModBlocks.BISMUTH_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.POWDERED_BISMUTH, RecipeCategory.DECORATIONS,
+                ModBlocks.BISMUTH_SAND);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MOURNSTEEL_INGOT, 1)
                 .input(Items.IRON_INGOT, 7)

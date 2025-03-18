@@ -25,6 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VANADINITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VANADIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_SAND);
     }
 
     @Override
@@ -32,10 +33,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MOURNCRYST, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOURNCRYST_BLACKENED, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOURNSTEEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOURNSTEEL_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.VANADINITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.VANADIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POWDERED_BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLANAR_TUNING_FORK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MOURNSTEEL_PICKAXE, Models.HANDHELD);

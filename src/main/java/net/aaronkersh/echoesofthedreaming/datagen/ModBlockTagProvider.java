@@ -27,7 +27,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VANADINITE_DEEPSLATE_ORE)
                 .add(ModBlocks.VANADINITE_BLOCK)
                 .add(ModBlocks.VANADIUM_BLOCK)
-                .add(ModBlocks.BISMUTH_BLOCK);
+                .add(ModBlocks.BISMUTH_BLOCK)
+                .add(ModBlocks.BISMUTH_SAND);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BISMUTH_BLOCK);

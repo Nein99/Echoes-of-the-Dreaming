@@ -13,12 +13,14 @@ import net.minecraft.item.*;
 
 public class ModItems {
     public static final Item MOURNSTEEL_INGOT = registerItem("mournsteel_ingot", new Item(new FabricItemSettings()));
+    public static final Item MOURNSTEEL_NUGGET = registerItem("mournsteel_nugget", new Item(new FabricItemSettings()));
     public static final Item MOURNCRYST = registerItem("mourncryst", new Item(new FabricItemSettings()));
     public static final Item MOURNCRYST_BLACKENED = registerItem("mourncryst_blackened", new Item(new FabricItemSettings()));
     public static final Item VANADINITE = registerItem("vanadinite", new Item(new FabricItemSettings()));
     public static final Item VANADIUM = registerItem("vanadium", new Item(new FabricItemSettings()));
     public static final Item RAW_BISMUTH = registerItem("raw_bismuth", new Item(new FabricItemSettings()));
     public static final Item BISMUTH = registerItem("bismuth", new Item(new FabricItemSettings()));
+    public static final Item POWDERED_BISMUTH = registerItem("powdered_bismuth", new Item(new FabricItemSettings()));
     public static final Item PLANAR_TUNING_FORK = registerItem("planar_tuning_fork", new Item(new FabricItemSettings()));
 
     public static final Item MOURNSTEEL_PICKAXE = registerItem("mournsteel_pickaxe",
@@ -35,12 +37,14 @@ public class ModItems {
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(MOURNSTEEL_INGOT);
+        entries.add(MOURNSTEEL_NUGGET);
         entries.add(MOURNCRYST);
         entries.add(MOURNCRYST_BLACKENED);
         entries.add(VANADINITE);
         entries.add(VANADIUM);
         entries.add(RAW_BISMUTH);
         entries.add(BISMUTH);
+        entries.add(POWDERED_BISMUTH);
 
     }
     private static Item registerItem(String name, Item item) {
