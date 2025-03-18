@@ -14,15 +14,15 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block MOURNSTEEL_BLOCK = registerBlock("mournsteel_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.METAL)));
+            RadioactiveBlocks.createStrongRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.METAL).ticksRandomly()));
     public static final Block MOURNCRYST_BLOCK = registerBlock("mourncryst_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE)));
+            RadioactiveBlocks.createStrongRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE).ticksRandomly()));
     public static final Block MOURNCRYST_BLACKENED_BLOCK = registerBlock("mourncryst_blackened_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.METAL)));
+            RadioactiveBlocks.createMediumRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.METAL).ticksRandomly()));
     public static final Block MOURNCRYST_ORE = registerBlock("mourncryst_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE)));
+            RadioactiveBlocks.createWeakRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE).ticksRandomly()));
     public static final Block MOURNCRYST_DEEPSLATE_ORE = registerBlock("mourncryst_deepslate_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE)));
+            RadioactiveBlocks.createMediumRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE).ticksRandomly()));
     public static final Block VANADINITE_BLOCK = registerBlock("vanadinite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL)));
     public static final Block VANADINITE_ORE = registerBlock("vanadinite_ore",
