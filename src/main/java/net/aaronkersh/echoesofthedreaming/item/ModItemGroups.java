@@ -41,12 +41,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BISMUTH_SAND);
 
                         entries.add(ModItems.PLANAR_TUNING_FORK);
+                        entries.add(ModItems.CURSED_SOULSTONE);
 
                         entries.add(ModItems.MOURNSTEEL_PICKAXE);
                         entries.add(ModItems.MOURNSTEEL_AXE);
                         entries.add(ModItems.MOURNSTEEL_SHOVEL);
                         entries.add(ModItems.MOURNSTEEL_SWORD);
                         entries.add(ModItems.MOURNSTEEL_HOE);
+
+                        entries.add(ModItems.MOURNING_OREWALKER_SPAWN_EGG);
 
 
                     }).build());

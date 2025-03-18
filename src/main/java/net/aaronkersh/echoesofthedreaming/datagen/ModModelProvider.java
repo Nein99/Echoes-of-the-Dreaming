@@ -6,7 +6,11 @@ import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -40,12 +44,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.POWDERED_BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLANAR_TUNING_FORK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CURSED_SOULSTONE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MOURNSTEEL_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOURNSTEEL_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOURNSTEEL_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOURNSTEEL_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOURNSTEEL_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.MOURNING_OREWALKER_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
     }
 }

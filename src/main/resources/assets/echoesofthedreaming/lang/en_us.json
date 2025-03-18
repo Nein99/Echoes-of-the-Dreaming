@@ -9,6 +9,7 @@
   "item.echoesofthedreaming.bismuth": "Bismuth Ingot",
   "item.echoesofthedreaming.powdered_bismuth": "Powdered Bismuth",
   "item.echoesofthedreaming.planar_tuning_fork": "Planar Tuning Fork",
+  "item.echoesofthedreaming.cursed_soulstone": "Cursed Soulstone",
 
   "item.echoesofthedreaming.mournsteel_sword": "Mournsteel Sword",
   "item.echoesofthedreaming.mournsteel_pickaxe": "Mournsteel Pickaxe",
@@ -36,5 +37,7 @@
 
   "itemgroup.echoesofthedreaming": "Echoes of the Dreaming",
 
-  "effect.echoesofthedreaming.malignant_aura": "Malignant Aura"
+  "effect.echoesofthedreaming.malignant_aura": "Malignant Aura",
+
+  "item.echoesofthedreaming.mourning_orewalker_spawn_egg": "Mourning Orewalker Spawn Egg"
 }
