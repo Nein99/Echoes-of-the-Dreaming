@@ -21,6 +21,10 @@
   "item.minecraft.splash_potion.effect.malignant_aura_potion": "Malignant Splash Potion",
   "item.minecraft.lingering_potion.effect.malignant_aura_potion": "Malignant Lingering Potion",
   "item.minecraft.tipped_arrow.effect.malignant_aura_potion": "Malignant Arrow",
+  "item.minecraft.potion.effect.stability_potion": "Potion of Stability",
+  "item.minecraft.splash_potion.effect.stability_potion": "Splash Potion of Stability",
+  "item.minecraft.lingering_potion.effect.stability_potion": "Lingering Potion of Stability",
+  "item.minecraft.tipped_arrow.effect.stability_potion": "Arrow of Stability",
 
 
   "block.echoesofthedreaming.mournsteel_block": "Block of Mournsteel",
@@ -38,6 +42,7 @@
   "itemgroup.echoesofthedreaming": "Echoes of the Dreaming",
 
   "effect.echoesofthedreaming.malignant_aura": "Malignant Aura",
+  "effect.echoesofthedreaming.stability": "Stability",
 
   "item.echoesofthedreaming.mourning_orewalker_spawn_egg": "Mourning Orewalker Spawn Egg"
 }

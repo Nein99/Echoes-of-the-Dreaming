@@ -14,6 +14,9 @@ public class ModPotions {
     public static final RegistryEntry<Potion> MALIGNANT_AURA_POTION = registerPotion("malignant_aura_potion",
             new Potion(new StatusEffectInstance(ModEffects.MALIGNANT_AURA, 1200, 0)));
 
+    public static final RegistryEntry<Potion> STABILITY_POTION = registerPotion("stability_potion",
+            new Potion(new StatusEffectInstance(ModEffects.STABILITY, 4800, 0)));
+
 
     private static RegistryEntry<Potion> registerPotion(String name, Potion potion) {
         return Registry.registerReference(Registries.POTION, Identifier.of(EchoesOfTheDreaming.MOD_ID, name), potion);

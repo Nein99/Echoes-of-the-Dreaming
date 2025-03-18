@@ -85,6 +85,7 @@ public class MourningOrewalkerModel<T extends MourningOrewalkerEntity> extends S
 		ModelPartData cube_r18 = RightLeg.addChild("cube_r18", ModelPartBuilder.create().uv(102, 44).cuboid(-3.0F, -14.0F, -5.0F, 7.0F, 14.0F, 6.0F, new Dilation(0.0F)), ModelTransform.of(-6.0F, -14.0F, 9.0F, -0.1745F, 0.0F, 0.1309F));
 		return TexturedModelData.of(modelData, 128, 128);
 	}
+
 	@Override
 	public void setAngles(MourningOrewalkerEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 		this.getPart().traverse().forEach(ModelPart::resetTransform);

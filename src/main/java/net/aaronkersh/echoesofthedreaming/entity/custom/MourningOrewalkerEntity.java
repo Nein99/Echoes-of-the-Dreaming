@@ -68,14 +68,26 @@ public class MourningOrewalkerEntity extends HostileEntity {
     @Override
     public void tick() {
         super.tick();
-        if(this.getWorld().isClient()) {
-            setupAnimationStates();
+
+        if (this.getVelocity().lengthSquared() > 0.02) {  // Moving
+            walkAnimationState.startIfNotRunning(this.age);
+        } else {
+            walkAnimationState.stop();
         }
 
-        // Handle attack animation
-        if (this.attackTicksLeft > 0) {
-            --this.attackTicksLeft;
+        if (!this.isAttacking()) {
+            idleAnimationState.startIfNotRunning(this.age);
+        } else {
+            idleAnimationState.stop();
         }
+
+        if (this.isAttacking()) {  // Ensure attack animation plays when needed
+            attackAnimationState.startIfNotRunning(this.age);
+        }
+
+        System.out.println("Walk Animation Running: " + walkAnimationState.isRunning());
+        System.out.println("Idle Animation Running: " + idleAnimationState.isRunning());
+        System.out.println("Attack Animation Running: " + attackAnimationState.isRunning());
 
         // Clear Malignant Aura if somehow applied
         if (this.hasStatusEffect(ModEffects.MALIGNANT_AURA)) {

@@ -12,7 +12,7 @@ public class MourningOrewalkerRenderer extends MobEntityRenderer<MourningOrewalk
     private static final Identifier TEXTURE = new Identifier(EchoesOfTheDreaming.MOD_ID, "textures/entity/mourning_orewalker.png");
 
     public MourningOrewalkerRenderer(EntityRendererFactory.Context context) {
-        super(context, new MourningOrewalkerModel<>(context.getPart(MourningOrewalkerModel.MOURNING_OREWALKER)), 0.75f);
+        super(context, new MourningOrewalkerModel<>(context.getPart(MourningOrewalkerModel.MOURNING_OREWALKER)), 0.5f);
     }
 
     @Override

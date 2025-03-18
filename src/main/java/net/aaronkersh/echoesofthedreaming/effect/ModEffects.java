@@ -15,6 +15,12 @@ public class ModEffects {
             new MalignantAuraEffect(StatusEffectCategory.HARMFUL, 0x660033) // Dark purple color
     );
 
+    public static final StatusEffect STABILITY = Registry.register(
+            Registries.STATUS_EFFECT,
+            new Identifier("echoesofthedreaming", "stability"),
+            new StabilityEffect(StatusEffectCategory.BENEFICIAL, 0x004F7A)
+    );
+
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(EchoesOfTheDreaming.MOD_ID, name), statusEffect);
