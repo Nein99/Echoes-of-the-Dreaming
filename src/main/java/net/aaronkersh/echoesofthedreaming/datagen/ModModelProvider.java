@@ -30,6 +30,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VANADIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_SAND);
+
+        blockStateModelGenerator.registerTintableCross(ModBlocks.BISMUTH_CRYSTALSEED, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

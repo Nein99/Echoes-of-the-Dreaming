@@ -67,5 +67,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.MOURNSTEEL_INGOT), conditionsFromItem(ModItems.MOURNSTEEL_INGOT))
                 .criterion(hasItem(ModItems.BISMUTH), conditionsFromItem(ModItems.BISMUTH))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLANAR_TUNING_FORK)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BISMUTH_CRYSTALSEED, 1)
+                .input(ModItems.RAW_BISMUTH, 1)
+                .input(ModItems.POWDERED_BISMUTH, 2)
+                .input(Items.REDSTONE, 1)
+                .criterion(hasItem(ModItems.RAW_BISMUTH), conditionsFromItem(ModItems.RAW_BISMUTH))
+                .criterion(hasItem(ModItems.POWDERED_BISMUTH), conditionsFromItem(ModItems.POWDERED_BISMUTH))
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BISMUTH_CRYSTALSEED)));
     }
 }

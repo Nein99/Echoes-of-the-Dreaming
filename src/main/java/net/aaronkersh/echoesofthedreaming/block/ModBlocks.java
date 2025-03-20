@@ -1,11 +1,13 @@
 package net.aaronkersh.echoesofthedreaming.block;
 
+import net.aaronkersh.echoesofthedreaming.world.tree.BismuthCrystalseedGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.aaronkersh.echoesofthedreaming.EchoesOfTheDreaming;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FallingBlock;
+import net.minecraft.block.SaplingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -36,6 +38,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
     public static final Block BISMUTH_SAND = registerBlock("bismuth_sand",
             new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND).sounds(BlockSoundGroup.SAND)));
+
+    public static final Block BISMUTH_CRYSTALSEED = registerBlock("bismuth_crystalseed",
+            new SaplingBlock(new BismuthCrystalseedGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
 
     private static Block registerBlock(String name, Block block) {

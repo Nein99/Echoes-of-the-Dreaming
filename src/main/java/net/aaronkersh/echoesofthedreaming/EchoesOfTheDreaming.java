@@ -6,6 +6,7 @@ import net.aaronkersh.echoesofthedreaming.entity.custom.MourningOrewalkerEntity;
 import net.aaronkersh.echoesofthedreaming.event.MiningEventHandler;
 import net.aaronkersh.echoesofthedreaming.item.ModItemGroups;
 import net.aaronkersh.echoesofthedreaming.potion.ModPotions;
+import net.aaronkersh.echoesofthedreaming.world.ModConfiguredFeatures;
 import net.fabricmc.api.ModInitializer;
 
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
@@ -24,6 +25,7 @@ public class EchoesOfTheDreaming implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModConfiguredFeatures.registerFeatures();
 		ModWorldGeneration.generateModWorldGen();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();

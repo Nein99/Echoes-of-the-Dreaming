@@ -39,6 +39,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BISMUTH_BLOCK);
                         entries.add(ModItems.POWDERED_BISMUTH);
                         entries.add(ModBlocks.BISMUTH_SAND);
+                        entries.add(ModBlocks.BISMUTH_CRYSTALSEED);
 
                         entries.add(ModItems.PLANAR_TUNING_FORK);
                         entries.add(ModItems.CURSED_SOULSTONE);
