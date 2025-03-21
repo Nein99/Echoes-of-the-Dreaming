@@ -17,6 +17,7 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MOURNCRYST_ORE_PLACED_KEY = registerKey("mourncryst_ore_placed");
     public static final RegistryKey<PlacedFeature> VANADINITE_ORE_PLACED_KEY = registerKey("vanadinite_ore_placed");
+    public static final RegistryKey<PlacedFeature> BISMUTH_ORE_PLACED_KEY = registerKey("bismuth_ore_placed");
 
     public static final RegistryKey<PlacedFeature> BISMUTH_CRYSTAL_PLACED_KEY =
             RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("echoesofthedreaming", "bismuth_crystal"));
@@ -28,6 +29,9 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
         register(context, VANADINITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.VANADINITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, BISMUTH_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BISMUTH_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
 

@@ -1,9 +1,12 @@
 {
 	"required": true,
+	"minVersion": "0.8",
 	"package": "net.aaronkersh.echoesofthedreaming.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"BlockMixin"
+	],
+	"client": [
 	],
 	"injectors": {
 		"defaultRequire": 1

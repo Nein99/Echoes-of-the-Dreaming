@@ -34,8 +34,12 @@ public class ModItemGroups {
                         entries.add(ModItems.VANADIUM);
                         entries.add(ModBlocks.VANADIUM_BLOCK);
 
+                        entries.add(ModBlocks.BISMUTH_ORE);
+                        entries.add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+
                         entries.add(ModItems.RAW_BISMUTH);
                         entries.add(ModItems.BISMUTH);
+                        entries.add(ModItems.BISMUTH_NUGGET);
                         entries.add(ModBlocks.BISMUTH_BLOCK);
                         entries.add(ModItems.POWDERED_BISMUTH);
                         entries.add(ModBlocks.BISMUTH_SAND);
@@ -49,6 +53,17 @@ public class ModItemGroups {
                         entries.add(ModItems.MOURNSTEEL_SHOVEL);
                         entries.add(ModItems.MOURNSTEEL_SWORD);
                         entries.add(ModItems.MOURNSTEEL_HOE);
+
+                        entries.add(ModItems.BISMUTH_PICKAXE);
+                        entries.add(ModItems.BISMUTH_AXE);
+                        entries.add(ModItems.BISMUTH_SHOVEL);
+                        entries.add(ModItems.BISMUTH_SWORD);
+                        entries.add(ModItems.BISMUTH_HOE);
+
+                        entries.add(ModItems.BISMUTH_HELMET);
+                        entries.add(ModItems.BISMUTH_CHESTPLATE);
+                        entries.add(ModItems.BISMUTH_LEGGINGS);
+                        entries.add(ModItems.BISMUTH_BOOTS);
 
                         entries.add(ModItems.MOURNING_OREWALKER_SPAWN_EGG);
 

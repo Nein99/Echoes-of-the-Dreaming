@@ -38,6 +38,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOURNCRYST_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.MOURNCRYST_DEEPSLATE_ORE, ModItems.MOURNCRYST));
         addDrop(ModBlocks.VANADINITE_ORE, copperLikeOreDrops(ModBlocks.VANADINITE_ORE, ModItems.VANADINITE));
         addDrop(ModBlocks.VANADINITE_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.VANADINITE_DEEPSLATE_ORE, ModItems.VANADINITE));
+        addDrop(ModBlocks.BISMUTH_ORE, copperLikeOreDrops(ModBlocks.BISMUTH_ORE, ModItems.RAW_BISMUTH));
+        addDrop(ModBlocks.BISMUTH_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.BISMUTH_DEEPSLATE_ORE, ModItems.RAW_BISMUTH));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

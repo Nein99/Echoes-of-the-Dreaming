@@ -5,9 +5,9 @@ import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
-public enum ModToolMaterial implements ToolMaterial {
-    MOURNSTEEL(4, 2031, 4.5f, 4.5f, 12,
-            () -> Ingredient.ofItems(ModItems.MOURNSTEEL_INGOT));
+public enum BismuthToolMaterial implements ToolMaterial {
+    BISMUTH(2, 250, 8f, 2f, 8,
+            () -> Ingredient.ofItems(ModItems.BISMUTH));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -16,7 +16,7 @@ public enum ModToolMaterial implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attckDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    BismuthToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attckDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

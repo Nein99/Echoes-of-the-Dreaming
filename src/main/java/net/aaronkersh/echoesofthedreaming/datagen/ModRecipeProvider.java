@@ -18,7 +18,8 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> MOURNCRYST_SMELTABLES = List.of(ModBlocks.MOURNCRYST_BLOCK);
     private static final List<ItemConvertible> VANADINITE_SMELTABLES = List.of(ModBlocks.VANADINITE_ORE, ModBlocks.VANADINITE_DEEPSLATE_ORE);
-    private static final List<ItemConvertible> BISMUTH_SMELTABLES = List.of(ModItems.RAW_BISMUTH);
+    private static final List<ItemConvertible> BISMUTH_SMELTABLES = List.of(ModItems.RAW_BISMUTH, ModBlocks.BISMUTH_ORE, ModBlocks.BISMUTH_DEEPSLATE_ORE);
+    private static final List<ItemConvertible> BISMUTH_NUGGET_SMELTABLES = List.of(ModItems.POWDERED_BISMUTH);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -38,6 +39,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 0.7f, 100, "bismuth");
         offerBlasting(exporter, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH,
                 0.7f, 100, "bismuth");
+        offerSmelting(exporter, BISMUTH_NUGGET_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH_NUGGET,
+                0.7f, 100, "bismuth_nugget");
+        offerBlasting(exporter, BISMUTH_NUGGET_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH_NUGGET,
+                0.7f, 100, "bismuth_nugget");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOURNCRYST, RecipeCategory.DECORATIONS,
                 ModBlocks.MOURNCRYST_BLOCK);
@@ -76,5 +81,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.POWDERED_BISMUTH), conditionsFromItem(ModItems.POWDERED_BISMUTH))
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BISMUTH_CRYSTALSEED)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 1)
+                .input(ModItems.VANADINITE, 1)
+                .criterion(hasItem(ModItems.VANADINITE), conditionsFromItem(ModItems.VANADINITE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.YELLOW_DYE)));
     }
 }
