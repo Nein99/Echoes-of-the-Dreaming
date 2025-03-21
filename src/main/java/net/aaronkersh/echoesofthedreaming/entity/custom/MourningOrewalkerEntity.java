@@ -1,6 +1,5 @@
 package net.aaronkersh.echoesofthedreaming.entity.custom;
 
-import net.aaronkersh.echoesofthedreaming.animation.MourningOrewalkerAnimations;
 import net.aaronkersh.echoesofthedreaming.effect.ModEffects;
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
 import net.minecraft.entity.*;
@@ -68,26 +67,14 @@ public class MourningOrewalkerEntity extends HostileEntity {
     @Override
     public void tick() {
         super.tick();
-
-        if (this.getVelocity().lengthSquared() > 0.02) {  // Moving
-            walkAnimationState.startIfNotRunning(this.age);
-        } else {
-            walkAnimationState.stop();
+        if(this.getWorld().isClient()) {
+            setupAnimationStates();
         }
 
-        if (!this.isAttacking()) {
-            idleAnimationState.startIfNotRunning(this.age);
-        } else {
-            idleAnimationState.stop();
+        // Decrement attack timer
+        if (this.attackTicksLeft > 0) {
+            --this.attackTicksLeft;
         }
-
-        if (this.isAttacking()) {  // Ensure attack animation plays when needed
-            attackAnimationState.startIfNotRunning(this.age);
-        }
-
-        System.out.println("Walk Animation Running: " + walkAnimationState.isRunning());
-        System.out.println("Idle Animation Running: " + idleAnimationState.isRunning());
-        System.out.println("Attack Animation Running: " + attackAnimationState.isRunning());
 
         // Clear Malignant Aura if somehow applied
         if (this.hasStatusEffect(ModEffects.MALIGNANT_AURA)) {
@@ -110,7 +97,7 @@ public class MourningOrewalkerEntity extends HostileEntity {
     public static DefaultAttributeContainer.Builder createMourningOrewalkerAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 100.0D)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25D)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.000025D)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 1.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 15.0D)
                 .add(EntityAttributes.GENERIC_ARMOR, 8.0D)

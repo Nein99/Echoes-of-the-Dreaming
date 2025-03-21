@@ -21,14 +21,14 @@ public class MourningOrewalkerRenderer extends MobEntityRenderer<MourningOrewalk
     }
 
     @Override
-    public void render(MourningOrewalkerEntity livingEntity, float f, float g, MatrixStack matrixStack,
+    public void render(MourningOrewalkerEntity mobEntity, float f, float g, MatrixStack matrixStack,
                        VertexConsumerProvider vertexConsumerProvider, int i) {
-        if(livingEntity.isBaby()) {
+        if(mobEntity.isBaby()) {
             matrixStack.scale(0.5f, 0.5f, 0.5f);
         } else {
             matrixStack.scale(1f, 1f, 1f);
         }
 
-        super.render(livingEntity, f, g, matrixStack, vertexConsumerProvider, i);
+        super.render(mobEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }
 }
