@@ -1,6 +1,7 @@
 package net.aaronkersh.echoesofthedreaming.world.biome;
 
 import net.aaronkersh.echoesofthedreaming.EchoesOfTheDreaming;
+import net.aaronkersh.echoesofthedreaming.entity.ModEntities;
 import net.aaronkersh.echoesofthedreaming.world.ModPlacedFeatures;
 import net.minecraft.client.sound.MusicType;
 import net.minecraft.entity.EntityType;
@@ -36,7 +37,7 @@ public class ModBiomes {
     public static Biome bismuthDesert(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
 
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 5, 4, 4));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BISMUTH_OREWALKER, 5, 4, 4));
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 

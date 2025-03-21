@@ -8,4 +8,6 @@ import net.minecraft.util.Identifier;
 public class ModModelLayers {
     public static final EntityModelLayer MOURNING_OREWALKER =
             new EntityModelLayer(new Identifier(EchoesOfTheDreaming.MOD_ID, "mourning_orewalker"), "main");
+    public static final EntityModelLayer BISMUTH_OREWALKER =
+            new EntityModelLayer(new Identifier(EchoesOfTheDreaming.MOD_ID, "bismuth_orewalker"), "main");
 }

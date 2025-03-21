@@ -67,6 +67,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BISMUTH_BOOTS);
 
                         entries.add(ModItems.MOURNING_OREWALKER_SPAWN_EGG);
+                        entries.add(ModItems.BISMUTH_OREWALKER_SPAWN_EGG);
 
 
                     }).build());

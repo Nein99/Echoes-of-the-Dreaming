@@ -61,6 +61,8 @@ public class ModItems {
 
     public static final Item MOURNING_OREWALKER_SPAWN_EGG = registerItem("mourning_orewalker_spawn_egg",
             new SpawnEggItem(ModEntities.MOURNING_OREWALKER, 0x5C6078, 0x232431, new FabricItemSettings()));
+    public static final Item BISMUTH_OREWALKER_SPAWN_EGG = registerItem("bismuth_orewalker_spawn_egg",
+            new SpawnEggItem(ModEntities.BISMUTH_OREWALKER, 0xCB3EB0, 0x54A580, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {

@@ -3,17 +3,12 @@ package net.aaronkersh.echoesofthedreaming.world.biome.surface;
 import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
 import net.aaronkersh.echoesofthedreaming.world.biome.ModBiomes;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.util.math.VerticalSurfaceType;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 
 public class ModMaterialRules {
-    private static final MaterialRules.MaterialRule DIRT = makeStateRule(ModBlocks.BISMUTH_BLOCK);
-    private static final MaterialRules.MaterialRule GRASS_BLOCK = makeStateRule(ModBlocks.BISMUTH_SAND);
     private static final MaterialRules.MaterialRule BISMUTH_BLOCK = makeStateRule(ModBlocks.BISMUTH_BLOCK);
-    private static final MaterialRules.MaterialRule SAND = makeStateRule(ModBlocks.BISMUTH_SAND);
     private static final MaterialRules.MaterialRule BISMUTH_SAND = makeStateRule(ModBlocks.BISMUTH_SAND);
-    private static final MaterialRules.MaterialRule SANDSTONE = makeStateRule(ModBlocks.BISMUTH_BLOCK);
 
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);

@@ -17,7 +17,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class MourningOrewalkerEntity extends HostileEntity {
+public class BismuthOrewalkerEntity extends HostileEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     public final AnimationState walkAnimationState = new AnimationState();
     public final AnimationState attackAnimationState = new AnimationState();
@@ -26,7 +26,7 @@ public class MourningOrewalkerEntity extends HostileEntity {
     private int attackTicksLeft;
     private boolean attackAnimation;
 
-    public MourningOrewalkerEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public BismuthOrewalkerEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -94,7 +94,7 @@ public class MourningOrewalkerEntity extends HostileEntity {
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
 
-    public static DefaultAttributeContainer.Builder createMourningOrewalkerAttributes() {
+    public static DefaultAttributeContainer.Builder createBismuthOrewalkerAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 100.0D)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.15D)
@@ -116,9 +116,6 @@ public class MourningOrewalkerEntity extends HostileEntity {
 
         if (attacked) {
             if (target instanceof LivingEntity living) {
-                // Apply Malignant Aura on hit
-                living.addStatusEffect(new StatusEffectInstance(ModEffects.MALIGNANT_AURA, 200, 0));
-
                 // Apply knockback
                 ((LivingEntity)target).takeKnockback(knockback * 0.5F,
                         Math.sin(this.getYaw() * 0.017453292F),
@@ -164,11 +161,11 @@ public class MourningOrewalkerEntity extends HostileEntity {
         // Drop Cursed Soulstone guaranteed
         this.dropItem(ModItems.CURSED_SOULSTONE);
 
-        // Drop 0-3 Mourncryst
+        // Drop 0-3 Bismuth
         Random random = this.getRandom();
         int mourncrystAmount = random.nextInt(4); // 0-3
         for (int i = 0; i < mourncrystAmount; i++) {
-            this.dropItem(ModItems.MOURNCRYST);
+            this.dropItem(ModItems.BISMUTH);
         }
     }
 

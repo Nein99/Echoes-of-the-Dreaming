@@ -2,6 +2,7 @@ package net.aaronkersh.echoesofthedreaming;
 
 import net.aaronkersh.echoesofthedreaming.effect.ModEffects;
 import net.aaronkersh.echoesofthedreaming.entity.ModEntities;
+import net.aaronkersh.echoesofthedreaming.entity.custom.BismuthOrewalkerEntity;
 import net.aaronkersh.echoesofthedreaming.entity.custom.MourningOrewalkerEntity;
 import net.aaronkersh.echoesofthedreaming.event.MiningEventHandler;
 import net.aaronkersh.echoesofthedreaming.item.ModItemGroups;
@@ -31,6 +32,7 @@ public class EchoesOfTheDreaming implements ModInitializer {
 		ModPotions.registerPotions();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MOURNING_OREWALKER, MourningOrewalkerEntity.createMourningOrewalkerAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.BISMUTH_OREWALKER, BismuthOrewalkerEntity.createBismuthOrewalkerAttributes());
 
 		MiningEventHandler.register();
 	}
