@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VANADINITE_ORE);
                         entries.add(ModBlocks.VANADINITE_DEEPSLATE_ORE);
                         entries.add(ModBlocks.VANADINITE_BLOCK);
+                        entries.add(ModItems.VANADIUM_PENTOXIDE);
 
                         entries.add(ModItems.VANADIUM);
                         entries.add(ModBlocks.VANADIUM_BLOCK);

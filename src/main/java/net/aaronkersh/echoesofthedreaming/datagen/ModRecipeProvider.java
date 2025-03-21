@@ -73,6 +73,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.BISMUTH), conditionsFromItem(ModItems.BISMUTH))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLANAR_TUNING_FORK)));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VANADIUM_PENTOXIDE, 9)
+                .input(ModItems.VANADINITE, 1)
+                .criterion(hasItem(ModItems.VANADINITE), conditionsFromItem(ModItems.VANADINITE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VANADIUM_PENTOXIDE)));
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.BISMUTH_CRYSTALSEED, 1)
                 .input(ModItems.RAW_BISMUTH, 1)
                 .input(ModItems.POWDERED_BISMUTH, 2)
@@ -82,9 +87,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.BISMUTH_CRYSTALSEED)));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 1)
-                .input(ModItems.VANADINITE, 1)
-                .criterion(hasItem(ModItems.VANADINITE), conditionsFromItem(ModItems.VANADINITE))
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.ORANGE_DYE, 9)
+                .input(ModItems.VANADIUM_PENTOXIDE, 1)
+                .criterion(hasItem(ModItems.VANADIUM_PENTOXIDE), conditionsFromItem(ModItems.VANADIUM_PENTOXIDE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.ORANGE_DYE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.WHITE_DYE, 9)
+                .input(ModItems.POWDERED_BISMUTH, 1)
+                .criterion(hasItem(ModItems.POWDERED_BISMUTH), conditionsFromItem(ModItems.POWDERED_BISMUTH))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.WHITE_DYE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.YELLOW_DYE, 18)
+                .input(ModItems.POWDERED_BISMUTH, 1)
+                .input(ModItems.VANADIUM_PENTOXIDE, 1)
+                .criterion(hasItem(ModItems.POWDERED_BISMUTH), conditionsFromItem(ModItems.POWDERED_BISMUTH))
+                .criterion(hasItem(ModItems.VANADIUM_PENTOXIDE), conditionsFromItem(ModItems.VANADIUM_PENTOXIDE))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.YELLOW_DYE)));
     }
 }

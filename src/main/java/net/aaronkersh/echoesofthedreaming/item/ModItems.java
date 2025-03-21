@@ -20,6 +20,7 @@ public class ModItems {
     public static final Item MOURNCRYST_BLACKENED = registerItem("mourncryst_blackened", new Item(new FabricItemSettings()));
     public static final Item VANADINITE = registerItem("vanadinite", new Item(new FabricItemSettings()));
     public static final Item VANADIUM = registerItem("vanadium", new Item(new FabricItemSettings()));
+    public static final Item VANADIUM_PENTOXIDE = registerItem("vanadium_pentoxide", new Item(new FabricItemSettings()));
     public static final Item RAW_BISMUTH = registerItem("raw_bismuth", new Item(new FabricItemSettings()));
     public static final Item BISMUTH = registerItem("bismuth", new Item(new FabricItemSettings()));
     public static final Item BISMUTH_NUGGET = registerItem("bismuth_nugget", new Item(new FabricItemSettings()));

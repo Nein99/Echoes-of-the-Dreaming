@@ -45,6 +45,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MOURNSTEEL_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.VANADINITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.VANADIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VANADIUM_PENTOXIDE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.BISMUTH_NUGGET, Models.GENERATED);
