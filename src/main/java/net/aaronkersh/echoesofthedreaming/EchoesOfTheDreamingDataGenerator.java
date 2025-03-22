@@ -1,6 +1,7 @@
 package net.aaronkersh.echoesofthedreaming;
 
 import net.aaronkersh.echoesofthedreaming.world.biome.ModBiomes;
+import net.aaronkersh.echoesofthedreaming.world.dimension.ModDimensions;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.aaronkersh.echoesofthedreaming.datagen.*;
@@ -27,5 +28,6 @@ public class EchoesOfTheDreamingDataGenerator implements DataGeneratorEntrypoint
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
 	}
 }

@@ -13,6 +13,10 @@ import net.fabricmc.api.ModInitializer;
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
 import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import net.aaronkersh.echoesofthedreaming.world.gen.ModWorldGeneration;
@@ -35,5 +39,12 @@ public class EchoesOfTheDreaming implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.BISMUTH_OREWALKER, BismuthOrewalkerEntity.createBismuthOrewalkerAttributes());
 
 		MiningEventHandler.register();
+
+		CustomPortalBuilder.beginPortal()
+				.frameBlock(Blocks.QUARTZ_BLOCK)
+				.lightWithItem(ModItems.PLANAR_TUNING_FORK)
+				.destDimID(new Identifier(EchoesOfTheDreaming.MOD_ID, "elemental_air"))
+				.tintColor(0x78A7FF)
+				.registerPortal();
 	}
 }
