@@ -8,6 +8,7 @@ import net.aaronkersh.echoesofthedreaming.event.MiningEventHandler;
 import net.aaronkersh.echoesofthedreaming.item.ModItemGroups;
 import net.aaronkersh.echoesofthedreaming.potion.ModPotions;
 import net.aaronkersh.echoesofthedreaming.world.ModConfiguredFeatures;
+import net.aaronkersh.echoesofthedreaming.world.dimension.InfiniteVerticalityHandler;
 import net.fabricmc.api.ModInitializer;
 
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
@@ -46,5 +47,7 @@ public class EchoesOfTheDreaming implements ModInitializer {
 				.destDimID(new Identifier(EchoesOfTheDreaming.MOD_ID, "elemental_air"))
 				.tintColor(0x78A7FF)
 				.registerPortal();
+
+		InfiniteVerticalityHandler.register();
 	}
 }
