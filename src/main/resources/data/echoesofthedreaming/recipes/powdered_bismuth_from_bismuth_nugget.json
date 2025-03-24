@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "echoesofthedreaming:bismuth_nugget"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "echoesofthedreaming:powdered_bismuth"
+  }
+}
