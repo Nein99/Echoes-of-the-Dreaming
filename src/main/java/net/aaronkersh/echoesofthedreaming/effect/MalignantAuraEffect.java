@@ -1,5 +1,11 @@
 package net.aaronkersh.echoesofthedreaming.effect;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
+
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.AttributeContainer;
 import net.minecraft.entity.effect.StatusEffect;
@@ -25,14 +31,15 @@ public class MalignantAuraEffect extends StatusEffect {
 
     private final Random random = Random.create();
 
+    // Map to track applied effects per entity
+    private static final Map<UUID, Set<StatusEffect>> entityEffectsMap = new HashMap<>();
+
     public MalignantAuraEffect(StatusEffectCategory category, int color) {
         super(category, color);
     }
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        // This method determines when the effect's applyUpdateEffect method should be called
-        // For random intervals, we'll always return true and handle timing in applyUpdateEffect
         return true;
     }
 
@@ -56,36 +63,65 @@ public class MalignantAuraEffect extends StatusEffect {
     }
 
     private void applyRandomAdditionalEffects(LivingEntity entity, int amplifier) {
+        UUID entityId = entity.getUuid();
+
+        // Ensure the entity has an entry in our tracking map
+        if (!entityEffectsMap.containsKey(entityId)) {
+            entityEffectsMap.put(entityId, new HashSet<>());
+        }
+
+        Set<StatusEffect> appliedEffects = entityEffectsMap.get(entityId);
+
         // Check for blindness
         if (random.nextFloat() < BLINDNESS_CHANCE) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 100, 0));
+            appliedEffects.add(StatusEffects.BLINDNESS);
         }
 
         // Check for nausea
         if (random.nextFloat() < NAUSEA_CHANCE) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 0));
+            appliedEffects.add(StatusEffects.NAUSEA);
         }
 
         // Check for slowness
         if (random.nextFloat() < SLOWNESS_CHANCE) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 150, amplifier > 0 ? 1 : 0));
+            appliedEffects.add(StatusEffects.SLOWNESS);
         }
 
         // Check for weakness
         if (random.nextFloat() < WEAKNESS_CHANCE) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 200, amplifier > 0 ? 1 : 0));
+            appliedEffects.add(StatusEffects.WEAKNESS);
         }
     }
 
-    // clear all secondary effects when Malignant Aura is removed
     @Override
     public void onRemoved(LivingEntity entity, AttributeContainer attributes, int amplifier) {
         super.onRemoved(entity, attributes, amplifier);
 
-        // Remove all the secondary effects when the main effect expires
-        entity.removeStatusEffect(StatusEffects.BLINDNESS);
-        entity.removeStatusEffect(StatusEffects.NAUSEA);
-        entity.removeStatusEffect(StatusEffects.SLOWNESS);
-        entity.removeStatusEffect(StatusEffects.WEAKNESS);
+        UUID entityId = entity.getUuid();
+
+        // Check if we have effects to clean up for this entity
+        if (entityEffectsMap.containsKey(entityId)) {
+            Set<StatusEffect> appliedEffects = entityEffectsMap.get(entityId);
+
+            // Handle removal safely using the server executor if on the server side
+            if (!entity.getWorld().isClient()) {
+                entity.getWorld().getServer().execute(() -> {
+                    for (StatusEffect effect : appliedEffects) {
+                        entity.removeStatusEffect(effect);
+                    }
+                    entityEffectsMap.remove(entityId);
+                });
+            } else {
+                // Direct removal on client side
+                for (StatusEffect effect : appliedEffects) {
+                    entity.removeStatusEffect(effect);
+                }
+                entityEffectsMap.remove(entityId);
+            }
+        }
     }
 }
