@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum MournsteelToolMaterial implements ToolMaterial {
-    MOURNSTEEL(4, 2031, 4.5f, 4.5f, 12,
+    MOURNSTEEL(4, 2031, 10f, 4.5f, 12,
             () -> Ingredient.ofItems(ModItems.MOURNSTEEL_INGOT));
 
     private final int miningLevel;

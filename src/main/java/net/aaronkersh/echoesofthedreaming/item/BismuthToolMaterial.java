@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum BismuthToolMaterial implements ToolMaterial {
-    BISMUTH(2, 250, 8f, 2f, 8,
+    BISMUTH(2, 131, 8f, 2f, 8,
             () -> Ingredient.ofItems(ModItems.BISMUTH));
 
     private final int miningLevel;
