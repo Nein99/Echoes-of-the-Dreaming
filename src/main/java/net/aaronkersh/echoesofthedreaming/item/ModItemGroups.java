@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup ECHOESOFTHEDREAMING_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(EchoesOfTheDreaming.MOD_ID, "mournsteel_ingot"),
+            new Identifier(EchoesOfTheDreaming.MOD_ID, "echoesofthedreaming"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.echoesofthedreaming"))
                     .icon(() -> new ItemStack(ModItems.MOURNSTEEL_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.MOURNCRYST);
@@ -70,6 +70,31 @@ public class ModItemGroups {
                         entries.add(ModItems.BISMUTH_OREWALKER_SPAWN_EGG);
 
 
+                    }).build());
+
+    public static final ItemGroup ELEMENTALPLANES_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(EchoesOfTheDreaming.MOD_ID, "elementalplanes"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.elementalplanes"))
+                    .icon(() -> new ItemStack(ModBlocks.AEROWOOD_LOG)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.AEROWOOD_LOG);
+                        entries.add(ModBlocks.AEROWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_AEROWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_AEROWOOD_WOOD);
+                        entries.add(ModBlocks.AEROWOOD_PLANKS);
+                        entries.add(ModBlocks.AEROWOOD_LEAVES);
+                        entries.add(ModBlocks.AEROWOOD_SAPLING);
+                        entries.add(ModBlocks.AEROWOOD_ROOTS);
+                        entries.add(ModBlocks.AEROWOOD_STAIRS);
+                        entries.add(ModBlocks.AEROWOOD_SLAB);
+                        entries.add(ModBlocks.AEROWOOD_FENCE);
+                        entries.add(ModBlocks.AEROWOOD_FENCE_GATE);
+                        entries.add(ModBlocks.AEROWOOD_WALL);
+                        entries.add(ModBlocks.AEROWOOD_BUTTON);
+                        entries.add(ModBlocks.AEROWOOD_PRESSURE_PLATE);
+                        entries.add(ModBlocks.AEROWOOD_DOOR);
+                        entries.add(ModBlocks.AEROWOOD_TRAPDOOR);
+                        entries.add(ModItems.AEROWOOD_SIGN);
+                        entries.add(ModItems.HANGING_AEROWOOD_SIGN);
                     }).build());
 
 

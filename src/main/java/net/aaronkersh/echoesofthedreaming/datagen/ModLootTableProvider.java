@@ -40,6 +40,26 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VANADINITE_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.VANADINITE_DEEPSLATE_ORE, ModItems.VANADINITE));
         addDrop(ModBlocks.BISMUTH_ORE, copperLikeOreDrops(ModBlocks.BISMUTH_ORE, ModItems.RAW_BISMUTH));
         addDrop(ModBlocks.BISMUTH_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.BISMUTH_DEEPSLATE_ORE, ModItems.RAW_BISMUTH));
+
+        addDrop(ModBlocks.AEROWOOD_LOG);
+        addDrop(ModBlocks.AEROWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_AEROWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_AEROWOOD_WOOD);
+        addDrop(ModBlocks.AEROWOOD_PLANKS);
+
+        addDrop(ModBlocks.AEROWOOD_LEAVES, leavesDrops(ModBlocks.AEROWOOD_LEAVES, ModBlocks.AEROWOOD_SAPLING, 0.0025f));
+        addDrop(ModBlocks.AEROWOOD_ROOTS);
+
+        addDrop(ModBlocks.AEROWOOD_STAIRS);
+        addDrop(ModBlocks.AEROWOOD_TRAPDOOR);
+        addDrop(ModBlocks.AEROWOOD_WALL);
+        addDrop(ModBlocks.AEROWOOD_FENCE);
+        addDrop(ModBlocks.AEROWOOD_FENCE_GATE);
+        addDrop(ModBlocks.AEROWOOD_BUTTON);
+        addDrop(ModBlocks.AEROWOOD_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.AEROWOOD_DOOR, doorDrops(ModBlocks.AEROWOOD_DOOR));
+        addDrop(ModBlocks.AEROWOOD_SLAB, slabDrops(ModBlocks.AEROWOOD_SLAB));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

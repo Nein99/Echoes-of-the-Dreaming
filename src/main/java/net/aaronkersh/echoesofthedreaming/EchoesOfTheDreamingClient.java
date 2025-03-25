@@ -1,5 +1,6 @@
 package net.aaronkersh.echoesofthedreaming;
 
+import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.aaronkersh.echoesofthedreaming.entity.ModEntities;
 import net.aaronkersh.echoesofthedreaming.entity.client.BismuthOrewalkerModel;
 import net.aaronkersh.echoesofthedreaming.entity.client.MourningOrewalkerRenderer;
@@ -12,6 +13,8 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
+import net.minecraft.client.render.TexturedRenderLayers;
+import net.minecraft.client.util.SpriteIdentifier;
 
 public class EchoesOfTheDreamingClient implements ClientModInitializer {
     @Override
@@ -23,5 +26,15 @@ public class EchoesOfTheDreamingClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.BISMUTH_OREWALKER, BismuthOrewalkerModel::getTexturedModelData);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BISMUTH_CRYSTALSEED, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AEROWOOD_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AEROWOOD_ROOTS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AEROWOOD_SAPLING, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AEROWOOD_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AEROWOOD_TRAPDOOR, RenderLayer.getCutout());
+
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.AEROWOOD_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.AEROWOOD_HANGING_SIGN_TEXTURE));
     }
 }

@@ -35,6 +35,26 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_SAND);
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.BISMUTH_CRYSTALSEED, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerLog(ModBlocks.AEROWOOD_LOG).log(ModBlocks.AEROWOOD_LOG).wood(ModBlocks.AEROWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AEROWOOD_LOG).log(ModBlocks.STRIPPED_AEROWOOD_LOG).wood(ModBlocks.STRIPPED_AEROWOOD_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AEROWOOD_LEAVES);
+
+        blockStateModelGenerator.registerTintableCross(ModBlocks.AEROWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool aerowood_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.AEROWOOD_PLANKS);
+        aerowood_pool.family(ModBlocks.AEROWOOD_FAMILY);
+
+        aerowood_pool.stairs(ModBlocks.AEROWOOD_STAIRS);
+        aerowood_pool.slab(ModBlocks.AEROWOOD_SLAB);
+        aerowood_pool.button(ModBlocks.AEROWOOD_BUTTON);
+        aerowood_pool.pressurePlate(ModBlocks.AEROWOOD_PRESSURE_PLATE);
+        aerowood_pool.fence(ModBlocks.AEROWOOD_FENCE);
+        aerowood_pool.fenceGate(ModBlocks.AEROWOOD_FENCE_GATE);
+        aerowood_pool.wall(ModBlocks.AEROWOOD_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.AEROWOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.AEROWOOD_TRAPDOOR);
     }
 
     @Override
@@ -74,6 +94,8 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
         itemModelGenerator.register(ModItems.BISMUTH_OREWALKER_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+
+        itemModelGenerator.register(ModItems.HANGING_AEROWOOD_SIGN, Models.GENERATED);
 
     }
 }

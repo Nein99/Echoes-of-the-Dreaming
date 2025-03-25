@@ -37,7 +37,7 @@ public class ModBiomes {
     public static Biome bismuthDesert(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
 
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.BISMUTH_OREWALKER, 5, 4, 4));
+        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.BISMUTH_OREWALKER, 50, 1, 4));
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 

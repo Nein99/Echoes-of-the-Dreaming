@@ -56,7 +56,33 @@
 
   "block.echoesofthedreaming.bismuth_crystalseed": "Bismuth Crystalseed",
 
-  "itemgroup.echoesofthedreaming": "Echoes of the Dreaming",
+  "block.echoesofthedreaming.aerowood_log": "Aerowood Log",
+  "block.echoesofthedreaming.aerowood_wood": "Aerowood Wood",
+  "block.echoesofthedreaming.stripped_aerowood_log": "Stripped Aerowood Log",
+  "block.echoesofthedreaming.stripped_aerowood_wood": "Stripped Aerowood Wood",
+  "block.echoesofthedreaming.aerowood_planks": "Aerowood Planks",
+  "block.echoesofthedreaming.aerowood_leaves": "Aerowood Leaves",
+  "block.echoesofthedreaming.aerowood_roots": "Aerowood Roots",
+
+  "block.echoesofthedreaming.aerowood_sapling": "Aerowood Sapling",
+
+  "block.echoesofthedreaming.aerowood_stairs": "Aerowood Stairs",
+  "block.echoesofthedreaming.aerowood_slab": "Aerowood Slab",
+  "block.echoesofthedreaming.aerowood_button": "Aerowood Button",
+  "block.echoesofthedreaming.aerowood_pressure_plate": "Aerowood Pressure Plate",
+  "block.echoesofthedreaming.aerowood_fence": "Aerowood Fence",
+  "block.echoesofthedreaming.aerowood_fence_gate": "Aerowood Fence Gate",
+  "block.echoesofthedreaming.aerowood_wall": "Aerowood Wall",
+  "block.echoesofthedreaming.aerowood_door": "Aerowood Door",
+  "block.echoesofthedreaming.aerowood_trapdoor": "Aerowood Trapdoor",
+
+  "block.echoesofthedreaming.aerowood_standing_sign": "Aerowood Standing Sign",
+  "block.echoesofthedreaming.aerowood_wall_sign": "Aerowood Wall Sign",
+  "block.echoesofthedreaming.aerowood_hanging_sign": "Aerowood Hanging Sign",
+  "block.echoesofthedreaming.aerowood_wall_hanging_sign": "Aerowood Wall Hanging Sign",
+
+  "itemgroup.echoesofthedreaming": "EotD: Akáhn",
+  "itemgroup.elementalplanes": "EotD: Elemental Planes",
 
   "effect.echoesofthedreaming.malignant_aura": "Malignant Aura",
   "effect.echoesofthedreaming.stability": "Stability",

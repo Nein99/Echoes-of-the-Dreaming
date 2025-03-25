@@ -14,6 +14,7 @@ import net.fabricmc.api.ModInitializer;
 import net.aaronkersh.echoesofthedreaming.item.ModItems;
 import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -49,5 +50,8 @@ public class EchoesOfTheDreaming implements ModInitializer {
 				.registerPortal();
 
 		InfiniteVerticalityHandler.register();
+
+		StrippableBlockRegistry.register(ModBlocks.AEROWOOD_LOG, ModBlocks.STRIPPED_AEROWOOD_LOG);
+		StrippableBlockRegistry.register(ModBlocks.AEROWOOD_WOOD, ModBlocks.STRIPPED_AEROWOOD_WOOD);
 	}
 }

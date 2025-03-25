@@ -1,6 +1,7 @@
 package net.aaronkersh.echoesofthedreaming.item;
 
 import net.aaronkersh.echoesofthedreaming.EchoesOfTheDreaming;
+import net.aaronkersh.echoesofthedreaming.block.ModBlocks;
 import net.aaronkersh.echoesofthedreaming.entity.ModEntities;
 import net.aaronkersh.echoesofthedreaming.item.custom.BismuthArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -63,6 +64,11 @@ public class ModItems {
             new SpawnEggItem(ModEntities.MOURNING_OREWALKER, 0x5C6078, 0x232431, new FabricItemSettings()));
     public static final Item BISMUTH_OREWALKER_SPAWN_EGG = registerItem("bismuth_orewalker_spawn_egg",
             new SpawnEggItem(ModEntities.BISMUTH_OREWALKER, 0xCB3EB0, 0x54A580, new FabricItemSettings()));
+
+    public static final Item AEROWOOD_SIGN = registerItem("aerowood_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_AEROWOOD_SIGN, ModBlocks.WALL_AEROWOOD_SIGN));
+    public static final Item HANGING_AEROWOOD_SIGN = registerItem("aerowood_hanging_sign",
+            new HangingSignItem(ModBlocks.HANGING_AEROWOOD_SIGN, ModBlocks.WALL_HANGING_AEROWOOD_SIGN, new FabricItemSettings().maxCount(16)));
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
