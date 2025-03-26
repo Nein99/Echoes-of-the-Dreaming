@@ -109,6 +109,65 @@ public class ModBlocks {
     public static final Block AEROWOOD_TRAPDOOR = registerBlock("aerowood_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
 
+    public static final Block SUNBEAM_LOG = registerBlock("sunbeam_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f)));
+    public static final Block SUNBEAM_WOOD = registerBlock("sunbeam_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4f)));
+    public static final Block STRIPPED_SUNBEAM_LOG = registerBlock("stripped_sunbeam_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4f)));
+    public static final Block STRIPPED_SUNBEAM_WOOD = registerBlock("stripped_sunbeam_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f)));
+
+    public static final Block SUNBEAM_PLANKS = registerBlock("sunbeam_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
+    public static final Block SUNBEAM_LEAVES = registerBlock("sunbeam_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4f).nonOpaque()));
+    public static final Block SUNBEAM_ROOTS = registerBlock("sunbeam_roots",
+            new Block(FabricBlockSettings.copyOf(Blocks.MANGROVE_ROOTS).strength(4f).nonOpaque()));
+
+    public static final Block SUNBEAM_SAPLING = registerBlock("sunbeam_sapling",
+            new SaplingBlock(new AerowoodTreeGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Identifier SUNBEAM_SIGN_TEXTURE = new Identifier(EchoesOfTheDreaming.MOD_ID, "entity/signs/sunbeam");
+    public static final Identifier SUNBEAM_HANGING_SIGN_TEXTURE = new Identifier(EchoesOfTheDreaming.MOD_ID, "entity/signs/hanging/sunbeam");
+    public static final Identifier SUNBEAM_HANGING_GUI_SIGN_TEXTURE = new Identifier(EchoesOfTheDreaming.MOD_ID, "textures/gui/hanging_signs/sunbeam");
+
+    public static final Block STANDING_SUNBEAM_SIGN = Registry.register(Registries.BLOCK, new Identifier(EchoesOfTheDreaming.MOD_ID, "sunbeam_standing_sign"),
+            new TerraformSignBlock(SUNBEAM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_SIGN)));
+    public static final Block WALL_SUNBEAM_SIGN = Registry.register(Registries.BLOCK, new Identifier(EchoesOfTheDreaming.MOD_ID, "sunbeam_wall_sign"),
+            new TerraformWallSignBlock(SUNBEAM_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN)));
+    public static final Block HANGING_SUNBEAM_SIGN = Registry.register(Registries.BLOCK, new Identifier(EchoesOfTheDreaming.MOD_ID, "sunbeam_hanging_sign"),
+            new TerraformHangingSignBlock(SUNBEAM_HANGING_SIGN_TEXTURE, SUNBEAM_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN)));
+    public static final Block WALL_HANGING_SUNBEAM_SIGN = Registry.register(Registries.BLOCK, new Identifier(EchoesOfTheDreaming.MOD_ID, "sunbeam_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(SUNBEAM_HANGING_SIGN_TEXTURE, SUNBEAM_HANGING_GUI_SIGN_TEXTURE, FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN)));
+
+    public static final BlockFamily SUNBEAM_FAMILY = BlockFamilies.register(ModBlocks.SUNBEAM_PLANKS)
+            .sign(ModBlocks.STANDING_SUNBEAM_SIGN, ModBlocks.WALL_SUNBEAM_SIGN)
+            .group("wooden").unlockCriterionName("has_planks").build();
+
+    public static final Block SUNBEAM_STAIRS = registerBlock("sunbeam_stairs",
+            new StairsBlock(ModBlocks.SUNBEAM_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SUNBEAM_SLAB = registerBlock("sunbeam_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block SUNBEAM_BUTTON = registerBlock("sunbeam_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.IRON, 10, true));
+    public static final Block SUNBEAM_PRESSURE_PLATE = registerBlock("sunbeam_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.IRON));
+
+    public static final Block SUNBEAM_FENCE = registerBlock("sunbeam_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block SUNBEAM_FENCE_GATE = registerBlock("sunbeam_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), WoodType.OAK));
+    public static final Block SUNBEAM_WALL = registerBlock("sunbeam_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+
+    public static final Block SUNBEAM_DOOR = registerBlock("sunbeam_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+    public static final Block SUNBEAM_TRAPDOOR = registerBlock("sunbeam_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -81,6 +81,31 @@
   "block.echoesofthedreaming.aerowood_hanging_sign": "Aerowood Hanging Sign",
   "block.echoesofthedreaming.aerowood_wall_hanging_sign": "Aerowood Wall Hanging Sign",
 
+  "block.echoesofthedreaming.sunbeam_log": "Sunbeam Log",
+  "block.echoesofthedreaming.sunbeam_wood": "Sunbeam Wood",
+  "block.echoesofthedreaming.stripped_sunbeam_log": "Stripped Sunbeam Log",
+  "block.echoesofthedreaming.stripped_sunbeam_wood": "Stripped Sunbeam Wood",
+  "block.echoesofthedreaming.sunbeam_planks": "Sunbeam Planks",
+  "block.echoesofthedreaming.sunbeam_leaves": "Sunbeam Leaves",
+  "block.echoesofthedreaming.sunbeam_roots": "Sunbeam Roots",
+
+  "block.echoesofthedreaming.sunbeam_sapling": "Sunbeam Sapling",
+
+  "block.echoesofthedreaming.sunbeam_stairs": "Sunbeam Stairs",
+  "block.echoesofthedreaming.sunbeam_slab": "Sunbeam Slab",
+  "block.echoesofthedreaming.sunbeam_button": "Sunbeam Button",
+  "block.echoesofthedreaming.sunbeam_pressure_plate": "Sunbeam Pressure Plate",
+  "block.echoesofthedreaming.sunbeam_fence": "Sunbeam Fence",
+  "block.echoesofthedreaming.sunbeam_fence_gate": "Sunbeam Fence Gate",
+  "block.echoesofthedreaming.sunbeam_wall": "Sunbeam Wall",
+  "block.echoesofthedreaming.sunbeam_door": "Sunbeam Door",
+  "block.echoesofthedreaming.sunbeam_trapdoor": "Sunbeam Trapdoor",
+
+  "block.echoesofthedreaming.sunbeam_standing_sign": "Sunbeam Standing Sign",
+  "block.echoesofthedreaming.sunbeam_wall_sign": "Sunbeam Wall Sign",
+  "block.echoesofthedreaming.sunbeam_hanging_sign": "Sunbeam Hanging Sign",
+  "block.echoesofthedreaming.sunbeam_wall_hanging_sign": "Sunbeam Wall Hanging Sign",
+
   "itemgroup.echoesofthedreaming": "EotD: Akáhn",
   "itemgroup.elementalplanes": "EotD: Elemental Planes",
 

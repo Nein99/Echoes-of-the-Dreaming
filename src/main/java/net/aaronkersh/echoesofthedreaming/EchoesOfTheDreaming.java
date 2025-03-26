@@ -53,5 +53,8 @@ public class EchoesOfTheDreaming implements ModInitializer {
 
 		StrippableBlockRegistry.register(ModBlocks.AEROWOOD_LOG, ModBlocks.STRIPPED_AEROWOOD_LOG);
 		StrippableBlockRegistry.register(ModBlocks.AEROWOOD_WOOD, ModBlocks.STRIPPED_AEROWOOD_WOOD);
+
+		StrippableBlockRegistry.register(ModBlocks.SUNBEAM_LOG, ModBlocks.STRIPPED_SUNBEAM_LOG);
+		StrippableBlockRegistry.register(ModBlocks.SUNBEAM_WOOD, ModBlocks.STRIPPED_SUNBEAM_WOOD);
 	}
 }

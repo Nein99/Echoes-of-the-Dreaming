@@ -70,6 +70,11 @@ public class ModItems {
     public static final Item HANGING_AEROWOOD_SIGN = registerItem("aerowood_hanging_sign",
             new HangingSignItem(ModBlocks.HANGING_AEROWOOD_SIGN, ModBlocks.WALL_HANGING_AEROWOOD_SIGN, new FabricItemSettings().maxCount(16)));
 
+    public static final Item SUNBEAM_SIGN = registerItem("sunbeam_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.STANDING_SUNBEAM_SIGN, ModBlocks.WALL_SUNBEAM_SIGN));
+    public static final Item HANGING_SUNBEAM_SIGN = registerItem("sunbeam_hanging_sign",
+            new HangingSignItem(ModBlocks.HANGING_SUNBEAM_SIGN, ModBlocks.WALL_HANGING_SUNBEAM_SIGN, new FabricItemSettings().maxCount(16)));
+
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(MOURNSTEEL_INGOT);

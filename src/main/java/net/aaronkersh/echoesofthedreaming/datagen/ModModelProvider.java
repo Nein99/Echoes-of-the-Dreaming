@@ -55,6 +55,26 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.AEROWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.AEROWOOD_TRAPDOOR);
+
+        blockStateModelGenerator.registerLog(ModBlocks.SUNBEAM_LOG).log(ModBlocks.SUNBEAM_LOG).wood(ModBlocks.SUNBEAM_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SUNBEAM_LOG).log(ModBlocks.STRIPPED_SUNBEAM_LOG).wood(ModBlocks.STRIPPED_SUNBEAM_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SUNBEAM_LEAVES);
+
+        blockStateModelGenerator.registerTintableCross(ModBlocks.SUNBEAM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool sunbeam_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SUNBEAM_PLANKS);
+        sunbeam_pool.family(ModBlocks.SUNBEAM_FAMILY);
+
+        sunbeam_pool.stairs(ModBlocks.SUNBEAM_STAIRS);
+        sunbeam_pool.slab(ModBlocks.SUNBEAM_SLAB);
+        sunbeam_pool.button(ModBlocks.SUNBEAM_BUTTON);
+        sunbeam_pool.pressurePlate(ModBlocks.SUNBEAM_PRESSURE_PLATE);
+        sunbeam_pool.fence(ModBlocks.SUNBEAM_FENCE);
+        sunbeam_pool.fenceGate(ModBlocks.SUNBEAM_FENCE_GATE);
+        sunbeam_pool.wall(ModBlocks.SUNBEAM_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.SUNBEAM_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.SUNBEAM_TRAPDOOR);
     }
 
     @Override
@@ -96,6 +116,7 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
         itemModelGenerator.register(ModItems.HANGING_AEROWOOD_SIGN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HANGING_SUNBEAM_SIGN, Models.GENERATED);
 
     }
 }

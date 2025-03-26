@@ -30,5 +30,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
                 .add(ModBlocks.AEROWOOD_FENCE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.SUNBEAM_PLANKS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.LOGS)
+                .add(ModBlocks.SUNBEAM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_SUNBEAM_LOG.asItem())
+                .add(ModBlocks.SUNBEAM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_SUNBEAM_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
+                .add(ModBlocks.SUNBEAM_FENCE.asItem());
     }
 }

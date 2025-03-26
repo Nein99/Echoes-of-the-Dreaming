@@ -75,7 +75,7 @@ public class ModItemGroups {
     public static final ItemGroup ELEMENTALPLANES_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(EchoesOfTheDreaming.MOD_ID, "elementalplanes"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.elementalplanes"))
-                    .icon(() -> new ItemStack(ModBlocks.AEROWOOD_LOG)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocks.SUNBEAM_LOG)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.AEROWOOD_LOG);
                         entries.add(ModBlocks.AEROWOOD_WOOD);
                         entries.add(ModBlocks.STRIPPED_AEROWOOD_LOG);
@@ -95,6 +95,25 @@ public class ModItemGroups {
                         entries.add(ModBlocks.AEROWOOD_TRAPDOOR);
                         entries.add(ModItems.AEROWOOD_SIGN);
                         entries.add(ModItems.HANGING_AEROWOOD_SIGN);
+                        entries.add(ModBlocks.SUNBEAM_LOG);
+                        entries.add(ModBlocks.SUNBEAM_WOOD);
+                        entries.add(ModBlocks.STRIPPED_SUNBEAM_LOG);
+                        entries.add(ModBlocks.STRIPPED_SUNBEAM_WOOD);
+                        entries.add(ModBlocks.SUNBEAM_PLANKS);
+                        entries.add(ModBlocks.SUNBEAM_LEAVES);
+                        entries.add(ModBlocks.SUNBEAM_SAPLING);
+                        entries.add(ModBlocks.SUNBEAM_ROOTS);
+                        entries.add(ModBlocks.SUNBEAM_STAIRS);
+                        entries.add(ModBlocks.SUNBEAM_SLAB);
+                        entries.add(ModBlocks.SUNBEAM_FENCE);
+                        entries.add(ModBlocks.SUNBEAM_FENCE_GATE);
+                        entries.add(ModBlocks.SUNBEAM_WALL);
+                        entries.add(ModBlocks.SUNBEAM_BUTTON);
+                        entries.add(ModBlocks.SUNBEAM_PRESSURE_PLATE);
+                        entries.add(ModBlocks.SUNBEAM_DOOR);
+                        entries.add(ModBlocks.SUNBEAM_TRAPDOOR);
+                        entries.add(ModItems.SUNBEAM_SIGN);
+                        entries.add(ModItems.HANGING_SUNBEAM_SIGN);
                     }).build());
 
 

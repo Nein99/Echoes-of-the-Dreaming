@@ -30,21 +30,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BISMUTH_BLOCK)
                 .add(ModBlocks.BISMUTH_SAND);
 
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(ModBlocks.AEROWOOD_LOG)
-                .add(ModBlocks.STRIPPED_AEROWOOD_LOG)
-                .add(ModBlocks.AEROWOOD_WOOD)
-                .add(ModBlocks.STRIPPED_AEROWOOD_WOOD)
-                .add(ModBlocks.AEROWOOD_PLANKS)
-                .add(ModBlocks.AEROWOOD_STAIRS)
-                .add(ModBlocks.AEROWOOD_SLAB)
-                .add(ModBlocks.AEROWOOD_FENCE)
-                .add(ModBlocks.AEROWOOD_FENCE_GATE)
-                .add(ModBlocks.AEROWOOD_BUTTON)
-                .add(ModBlocks.AEROWOOD_PRESSURE_PLATE)
-                .add(ModBlocks.AEROWOOD_DOOR)
-                .add(ModBlocks.AEROWOOD_TRAPDOOR);
-
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BISMUTH_BLOCK);
 
@@ -59,6 +44,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MOURNCRYST_DEEPSLATE_ORE)
                 .add(ModBlocks.MOURNCRYST_BLOCK)
                 .add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
+
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
+                .add(ModBlocks.MOURNSTEEL_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.AEROWOOD_LOG)
+                .add(ModBlocks.STRIPPED_AEROWOOD_LOG)
+                .add(ModBlocks.AEROWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_AEROWOOD_WOOD)
+                .add(ModBlocks.AEROWOOD_PLANKS)
+                .add(ModBlocks.AEROWOOD_STAIRS)
+                .add(ModBlocks.AEROWOOD_SLAB)
+                .add(ModBlocks.AEROWOOD_FENCE)
+                .add(ModBlocks.AEROWOOD_FENCE_GATE)
+                .add(ModBlocks.AEROWOOD_BUTTON)
+                .add(ModBlocks.AEROWOOD_PRESSURE_PLATE)
+                .add(ModBlocks.AEROWOOD_DOOR)
+                .add(ModBlocks.AEROWOOD_TRAPDOOR);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.AEROWOOD_PLANKS);
@@ -97,7 +100,56 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.AEROWOOD_WALL);
 
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
-                .add(ModBlocks.MOURNSTEEL_BLOCK);
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.SUNBEAM_LOG)
+                .add(ModBlocks.STRIPPED_SUNBEAM_LOG)
+                .add(ModBlocks.SUNBEAM_WOOD)
+                .add(ModBlocks.STRIPPED_SUNBEAM_WOOD)
+                .add(ModBlocks.SUNBEAM_PLANKS)
+                .add(ModBlocks.SUNBEAM_STAIRS)
+                .add(ModBlocks.SUNBEAM_SLAB)
+                .add(ModBlocks.SUNBEAM_FENCE)
+                .add(ModBlocks.SUNBEAM_FENCE_GATE)
+                .add(ModBlocks.SUNBEAM_BUTTON)
+                .add(ModBlocks.SUNBEAM_PRESSURE_PLATE)
+                .add(ModBlocks.SUNBEAM_DOOR)
+                .add(ModBlocks.SUNBEAM_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.SUNBEAM_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN) // Even though it won’t burn, this allows it to work in crafting
+                .add(ModBlocks.SUNBEAM_LOG)
+                .add(ModBlocks.STRIPPED_SUNBEAM_LOG)
+                .add(ModBlocks.SUNBEAM_WOOD)
+                .add(ModBlocks.STRIPPED_SUNBEAM_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(ModBlocks.SUNBEAM_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.SUNBEAM_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(ModBlocks.SUNBEAM_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.SUNBEAM_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(ModBlocks.SUNBEAM_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(ModBlocks.SUNBEAM_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.SUNBEAM_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.SUNBEAM_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SUNBEAM_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.SUNBEAM_WALL);
     }
 }

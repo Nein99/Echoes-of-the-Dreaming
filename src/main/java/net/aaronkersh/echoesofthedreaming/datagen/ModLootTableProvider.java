@@ -60,6 +60,26 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.AEROWOOD_DOOR, doorDrops(ModBlocks.AEROWOOD_DOOR));
         addDrop(ModBlocks.AEROWOOD_SLAB, slabDrops(ModBlocks.AEROWOOD_SLAB));
+
+        addDrop(ModBlocks.SUNBEAM_LOG);
+        addDrop(ModBlocks.SUNBEAM_WOOD);
+        addDrop(ModBlocks.STRIPPED_SUNBEAM_LOG);
+        addDrop(ModBlocks.STRIPPED_SUNBEAM_WOOD);
+        addDrop(ModBlocks.SUNBEAM_PLANKS);
+
+        addDrop(ModBlocks.SUNBEAM_LEAVES, leavesDrops(ModBlocks.SUNBEAM_LEAVES, ModBlocks.SUNBEAM_SAPLING, 0.0025f));
+        addDrop(ModBlocks.SUNBEAM_ROOTS);
+
+        addDrop(ModBlocks.SUNBEAM_STAIRS);
+        addDrop(ModBlocks.SUNBEAM_TRAPDOOR);
+        addDrop(ModBlocks.SUNBEAM_WALL);
+        addDrop(ModBlocks.SUNBEAM_FENCE);
+        addDrop(ModBlocks.SUNBEAM_FENCE_GATE);
+        addDrop(ModBlocks.SUNBEAM_BUTTON);
+        addDrop(ModBlocks.SUNBEAM_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.SUNBEAM_DOOR, doorDrops(ModBlocks.SUNBEAM_DOOR));
+        addDrop(ModBlocks.SUNBEAM_SLAB, slabDrops(ModBlocks.SUNBEAM_SLAB));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

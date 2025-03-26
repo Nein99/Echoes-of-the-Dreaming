@@ -36,5 +36,15 @@ public class EchoesOfTheDreamingClient implements ClientModInitializer {
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.AEROWOOD_SIGN_TEXTURE));
         SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.AEROWOOD_HANGING_SIGN_TEXTURE));
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SUNBEAM_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SUNBEAM_ROOTS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SUNBEAM_SAPLING, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SUNBEAM_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SUNBEAM_TRAPDOOR, RenderLayer.getCutout());
+
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.SUNBEAM_SIGN_TEXTURE));
+        SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.SUNBEAM_HANGING_SIGN_TEXTURE));
     }
 }

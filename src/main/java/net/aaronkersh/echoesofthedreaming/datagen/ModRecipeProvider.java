@@ -146,91 +146,91 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.POWDERED_BISMUTH), conditionsFromItem(ModItems.POWDERED_BISMUTH))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.WHITE_DYE)));
 
-        // Aerowood recipes
+        // Sunbeam recipes
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
-                .input(ModBlocks.AEROWOOD_LOG)
-                .criterion(hasItem(ModBlocks.AEROWOOD_LOG), conditionsFromItem(ModBlocks.AEROWOOD_LOG))
-                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_log"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_PLANKS, 4)
+                .input(ModBlocks.SUNBEAM_LOG)
+                .criterion(hasItem(ModBlocks.SUNBEAM_LOG), conditionsFromItem(ModBlocks.SUNBEAM_LOG))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "sunbeam_planks_from_log"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
-                .input(ModBlocks.STRIPPED_AEROWOOD_LOG)
-                .criterion(hasItem(ModBlocks.STRIPPED_AEROWOOD_LOG), conditionsFromItem(ModBlocks.STRIPPED_AEROWOOD_LOG))
-                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_stripped_log"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_SUNBEAM_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_SUNBEAM_LOG), conditionsFromItem(ModBlocks.STRIPPED_SUNBEAM_LOG))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "sunbeam_planks_from_stripped_log"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
-                .input(ModBlocks.AEROWOOD_WOOD)
-                .criterion(hasItem(ModBlocks.AEROWOOD_WOOD), conditionsFromItem(ModBlocks.AEROWOOD_WOOD))
-                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_wood"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_PLANKS, 4)
+                .input(ModBlocks.SUNBEAM_WOOD)
+                .criterion(hasItem(ModBlocks.SUNBEAM_WOOD), conditionsFromItem(ModBlocks.SUNBEAM_WOOD))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "sunbeam_planks_from_wood"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
-                .input(ModBlocks.STRIPPED_AEROWOOD_WOOD)
-                .criterion(hasItem(ModBlocks.STRIPPED_AEROWOOD_WOOD), conditionsFromItem(ModBlocks.STRIPPED_AEROWOOD_WOOD))
-                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_stripped_wood"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_SUNBEAM_WOOD)
+                .criterion(hasItem(ModBlocks.STRIPPED_SUNBEAM_WOOD), conditionsFromItem(ModBlocks.STRIPPED_SUNBEAM_WOOD))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "sunbeam_planks_from_stripped_wood"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_STAIRS, 4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_STAIRS, 4)
                 .pattern("P  ")
                 .pattern("PP ")
                 .pattern("PPP")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_SLAB, 6)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_SLAB, 6)
                 .pattern("PPP")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_FENCE, 3)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_FENCE, 3)
                 .pattern("PSP")
                 .pattern("PSP")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
                 .input('S', Items.STICK)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_FENCE_GATE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_FENCE_GATE, 1)
                 .pattern("SPS")
                 .pattern("SPS")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
                 .input('S', Items.STICK)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_DOOR, 3)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.SUNBEAM_DOOR, 3)
                 .pattern("PP")
                 .pattern("PP")
                 .pattern("PP")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_TRAPDOOR, 2)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.SUNBEAM_TRAPDOOR, 2)
                 .pattern("PPP")
                 .pattern("PPP")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_BUTTON, 1)
-                .input(ModBlocks.AEROWOOD_PLANKS)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.SUNBEAM_BUTTON, 1)
+                .input(ModBlocks.SUNBEAM_PLANKS)
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_PRESSURE_PLATE, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.SUNBEAM_PRESSURE_PLATE, 1)
                 .pattern("PP")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_WALL, 6)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_WALL, 6)
                 .pattern("SSS")
                 .pattern("PPP")
-                .input('P', ModBlocks.AEROWOOD_PLANKS)
-                .input('S', ModBlocks.AEROWOOD_SLAB)
-                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
-                .criterion(hasItem(ModBlocks.AEROWOOD_SLAB), conditionsFromItem(ModBlocks.AEROWOOD_SLAB))
+                .input('P', ModBlocks.SUNBEAM_PLANKS)
+                .input('S', ModBlocks.SUNBEAM_SLAB)
+                .criterion(hasItem(ModBlocks.SUNBEAM_PLANKS), conditionsFromItem(ModBlocks.SUNBEAM_PLANKS))
+                .criterion(hasItem(ModBlocks.SUNBEAM_SLAB), conditionsFromItem(ModBlocks.SUNBEAM_SLAB))
                 .offerTo(exporter);
 
         // Other recipes
