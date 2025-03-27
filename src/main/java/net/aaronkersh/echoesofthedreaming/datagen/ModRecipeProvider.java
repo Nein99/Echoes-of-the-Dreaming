@@ -146,6 +146,118 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.POWDERED_BISMUTH), conditionsFromItem(ModItems.POWDERED_BISMUTH))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.WHITE_DYE)));
 
+        // Corundum recipes
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLACK_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.BLACK_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BLUE_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.BLUE_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BROWN_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.BROWN_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.GREEN_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.GREEN_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.GREY_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.GREY_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ORANGE_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.ORANGE_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.PINK_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PURPLE_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.PURPLE_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.WHITE_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.WHITE_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.YELLOW_SAPPHIRE, RecipeCategory.DECORATIONS,
+                ModBlocks.YELLOW_SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, RecipeCategory.DECORATIONS,
+                ModBlocks.RUBY_BLOCK);
+
+        // Aerowood recipes
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
+                .input(ModBlocks.AEROWOOD_LOG)
+                .criterion(hasItem(ModBlocks.AEROWOOD_LOG), conditionsFromItem(ModBlocks.AEROWOOD_LOG))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_AEROWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_AEROWOOD_LOG), conditionsFromItem(ModBlocks.STRIPPED_AEROWOOD_LOG))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_stripped_log"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
+                .input(ModBlocks.AEROWOOD_WOOD)
+                .criterion(hasItem(ModBlocks.AEROWOOD_WOOD), conditionsFromItem(ModBlocks.AEROWOOD_WOOD))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_wood"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_PLANKS, 4)
+                .input(ModBlocks.STRIPPED_AEROWOOD_WOOD)
+                .criterion(hasItem(ModBlocks.STRIPPED_AEROWOOD_WOOD), conditionsFromItem(ModBlocks.STRIPPED_AEROWOOD_WOOD))
+                .offerTo(exporter, new Identifier("echoesofthedreaming", "aerowood_planks_from_stripped_wood"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_STAIRS, 4)
+                .pattern("P  ")
+                .pattern("PP ")
+                .pattern("PPP")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_SLAB, 6)
+                .pattern("PPP")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_FENCE, 3)
+                .pattern("PSP")
+                .pattern("PSP")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_FENCE_GATE, 1)
+                .pattern("SPS")
+                .pattern("SPS")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_DOOR, 3)
+                .pattern("PP")
+                .pattern("PP")
+                .pattern("PP")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_TRAPDOOR, 2)
+                .pattern("PPP")
+                .pattern("PPP")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_BUTTON, 1)
+                .input(ModBlocks.AEROWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.AEROWOOD_PRESSURE_PLATE, 1)
+                .pattern("PP")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AEROWOOD_WALL, 6)
+                .pattern("SSS")
+                .pattern("PPP")
+                .input('P', ModBlocks.AEROWOOD_PLANKS)
+                .input('S', ModBlocks.AEROWOOD_SLAB)
+                .criterion(hasItem(ModBlocks.AEROWOOD_PLANKS), conditionsFromItem(ModBlocks.AEROWOOD_PLANKS))
+                .criterion(hasItem(ModBlocks.AEROWOOD_SLAB), conditionsFromItem(ModBlocks.AEROWOOD_SLAB))
+                .offerTo(exporter);
+
         // Sunbeam recipes
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNBEAM_PLANKS, 4)

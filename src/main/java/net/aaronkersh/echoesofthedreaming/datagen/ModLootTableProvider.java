@@ -40,6 +40,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VANADINITE_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.VANADINITE_DEEPSLATE_ORE, ModItems.VANADINITE));
         addDrop(ModBlocks.BISMUTH_ORE, copperLikeOreDrops(ModBlocks.BISMUTH_ORE, ModItems.RAW_BISMUTH));
         addDrop(ModBlocks.BISMUTH_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.BISMUTH_DEEPSLATE_ORE, ModItems.RAW_BISMUTH));
+        addDrop(ModBlocks.CORUNDUM_ORE, copperLikeOreDrops(ModBlocks.CORUNDUM_ORE, ModItems.UNCUT_CORUNDUM));
+        addDrop(ModBlocks.CORUNDUM_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.CORUNDUM_DEEPSLATE_ORE, ModItems.UNCUT_CORUNDUM));
+
+        addDrop(ModBlocks.BLACK_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.BLUE_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.BROWN_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.GREEN_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.GREY_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.ORANGE_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.PINK_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.PURPLE_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.WHITE_SAPPHIRE_BLOCK);
+        addDrop(ModBlocks.YELLOW_SAPPHIRE_BLOCK);
 
         addDrop(ModBlocks.AEROWOOD_LOG);
         addDrop(ModBlocks.AEROWOOD_WOOD);

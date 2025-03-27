@@ -29,6 +29,35 @@ public class ModItems {
     public static final Item PLANAR_TUNING_FORK = registerItem("planar_tuning_fork", new Item(new FabricItemSettings()));
     public static final Item CURSED_SOULSTONE = registerItem("cursed_soulstone", new Item(new FabricItemSettings()));
 
+    public static final Item BLACK_SAPPHIRE = registerItem("black_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item BLUE_SAPPHIRE = registerItem("blue_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item BLUE_STAR_SAPPHIRE = registerItem("blue_star_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item BROWN_SAPPHIRE = registerItem("brown_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item GREEN_SAPPHIRE = registerItem("green_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item GREY_SAPPHIRE = registerItem("grey_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item ORANGE_SAPPHIRE = registerItem("orange_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item PINK_SAPPHIRE = registerItem("pink_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item PURPLE_SAPPHIRE = registerItem("purple_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item WHITE_SAPPHIRE = registerItem("white_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item YELLOW_SAPPHIRE = registerItem("yellow_sapphire",
+            new Item(new FabricItemSettings()));
+    public static final Item UNCUT_CORUNDUM = registerItem("uncut_corundum",
+            new Item(new FabricItemSettings()));
+    public static final Item RUBY = registerItem("ruby",
+            new Item(new FabricItemSettings()));
+    public static final Item STAR_RUBY = registerItem("star_ruby",
+            new Item(new FabricItemSettings()));
+
     public static final Item MOURNSTEEL_PICKAXE = registerItem("mournsteel_pickaxe",
             new MournsteelPickaxeItem(MournsteelToolMaterial.MOURNSTEEL, 2, 2f, new FabricItemSettings()));
     public static final Item MOURNSTEEL_AXE = registerItem("mournsteel_axe",

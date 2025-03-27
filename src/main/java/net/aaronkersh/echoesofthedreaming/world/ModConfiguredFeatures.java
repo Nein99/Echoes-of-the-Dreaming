@@ -19,6 +19,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> VANADINITE_ORE_KEY = registerKey("vanadinite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BISMUTH_ORE_KEY = registerKey("bismuth_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BISMUTH_CRYSTAL_KEY = registerKey("bismuth_crystal");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CORUNDUM_ORE_KEY = registerKey("corundum_ore");
 
     public static void registerFeatures() {
         BISMUTH_CRYSTAL_FEATURE = Registry.register(
@@ -46,9 +47,14 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.BISMUTH_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.BISMUTH_DEEPSLATE_ORE.getDefaultState()));
 
-        register(context, MOURNCRYST_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMourncrystOres, 5));
+        List<OreFeatureConfig.Target> overworldCorundumOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.CORUNDUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.CORUNDUM_DEEPSLATE_ORE.getDefaultState()));
+
+        register(context, MOURNCRYST_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMourncrystOres, 1));
         register(context, VANADINITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldVanadiniteOres, 5));
-        register(context, BISMUTH_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldVanadiniteOres, 5));
+        register(context, BISMUTH_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBismuthOres, 5));
+        register(context, CORUNDUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCorundumOres, 5));
 
         if (BISMUTH_CRYSTAL_FEATURE != null) {
             register(context, BISMUTH_CRYSTAL_KEY, BISMUTH_CRYSTAL_FEATURE,

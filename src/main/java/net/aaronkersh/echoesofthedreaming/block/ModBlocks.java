@@ -50,6 +50,33 @@ public class ModBlocks {
     public static final Block BISMUTH_CRYSTALSEED = registerBlock("bismuth_crystalseed",
             new SaplingBlock(new BismuthCrystalseedGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
+    public static final Block CORUNDUM_ORE = registerBlock("corundum_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block CORUNDUM_DEEPSLATE_ORE = registerBlock("corundum_deepslate_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block BLACK_SAPPHIRE_BLOCK = registerBlock("black_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block BLUE_SAPPHIRE_BLOCK = registerBlock("blue_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block BROWN_SAPPHIRE_BLOCK = registerBlock("brown_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block GREEN_SAPPHIRE_BLOCK = registerBlock("green_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block GREY_SAPPHIRE_BLOCK = registerBlock("grey_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block ORANGE_SAPPHIRE_BLOCK = registerBlock("orange_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block PINK_SAPPHIRE_BLOCK = registerBlock("pink_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block PURPLE_SAPPHIRE_BLOCK = registerBlock("purple_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block WHITE_SAPPHIRE_BLOCK = registerBlock("white_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block YELLOW_SAPPHIRE_BLOCK = registerBlock("yellow_sapphire_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_BLOCK).sounds(BlockSoundGroup.METAL)));
+
     public static final Block AEROWOOD_LOG = registerBlock("aerowood_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f)));
     public static final Block AEROWOOD_WOOD = registerBlock("aerowood_wood",

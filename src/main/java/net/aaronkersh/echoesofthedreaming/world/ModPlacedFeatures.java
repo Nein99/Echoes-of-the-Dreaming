@@ -18,6 +18,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MOURNCRYST_ORE_PLACED_KEY = registerKey("mourncryst_ore_placed");
     public static final RegistryKey<PlacedFeature> VANADINITE_ORE_PLACED_KEY = registerKey("vanadinite_ore_placed");
     public static final RegistryKey<PlacedFeature> BISMUTH_ORE_PLACED_KEY = registerKey("bismuth_ore_placed");
+    public static final RegistryKey<PlacedFeature> CORUNDUM_ORE_PLACED_KEY = registerKey("corundum_ore_placed");
 
     public static final RegistryKey<PlacedFeature> BISMUTH_CRYSTAL_PLACED_KEY =
             RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier("echoesofthedreaming", "bismuth_crystal"));
@@ -27,13 +28,16 @@ public class ModPlacedFeatures {
 
         register(context, MOURNCRYST_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MOURNCRYST_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(12))));
         register(context, VANADINITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.VANADINITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(3, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(128))));
         register(context, BISMUTH_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BISMUTH_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(1, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                ModOrePlacement.modifiersWithCount(3, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(256))));
+        register(context, CORUNDUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.CORUNDUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(8, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(256))));
 
         register(context, BISMUTH_CRYSTAL_PLACED_KEY,
                 configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BISMUTH_CRYSTAL_KEY),

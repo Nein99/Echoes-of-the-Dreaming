@@ -43,7 +43,7 @@ public class EchoesOfTheDreaming implements ModInitializer {
 		MiningEventHandler.register();
 
 		CustomPortalBuilder.beginPortal()
-				.frameBlock(Blocks.QUARTZ_BLOCK)
+				.frameBlock(ModBlocks.WHITE_SAPPHIRE_BLOCK)
 				.lightWithItem(ModItems.PLANAR_TUNING_FORK)
 				.destDimID(new Identifier(EchoesOfTheDreaming.MOD_ID, "elemental_air"))
 				.tintColor(0x78A7FF)

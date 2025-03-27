@@ -46,6 +46,36 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BISMUTH_SAND);
                         entries.add(ModBlocks.BISMUTH_CRYSTALSEED);
 
+                        entries.add(ModBlocks.CORUNDUM_ORE);
+                        entries.add(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
+                        entries.add(ModItems.UNCUT_CORUNDUM);
+
+                        entries.add(ModItems.RUBY);
+                        entries.add(ModItems.STAR_RUBY);
+                        entries.add(ModItems.BLACK_SAPPHIRE);
+                        entries.add(ModItems.BLUE_SAPPHIRE);
+                        entries.add(ModItems.BLUE_STAR_SAPPHIRE);
+                        entries.add(ModItems.BROWN_SAPPHIRE);
+                        entries.add(ModItems.GREEN_SAPPHIRE);
+                        entries.add(ModItems.GREY_SAPPHIRE);
+                        entries.add(ModItems.ORANGE_SAPPHIRE);
+                        entries.add(ModItems.PINK_SAPPHIRE);
+                        entries.add(ModItems.PURPLE_SAPPHIRE);
+                        entries.add(ModItems.WHITE_SAPPHIRE);
+                        entries.add(ModItems.YELLOW_SAPPHIRE);
+
+                        entries.add(ModBlocks.RUBY_BLOCK);
+                        entries.add(ModBlocks.BLACK_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.BLUE_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.BROWN_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.GREEN_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.GREY_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.ORANGE_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.PINK_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.PURPLE_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.WHITE_SAPPHIRE_BLOCK);
+                        entries.add(ModBlocks.YELLOW_SAPPHIRE_BLOCK);
+
                         entries.add(ModItems.PLANAR_TUNING_FORK);
                         entries.add(ModItems.CURSED_SOULSTONE);
 

@@ -36,6 +36,20 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.BISMUTH_CRYSTALSEED, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORUNDUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BROWN_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREEN_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREY_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_SAPPHIRE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
+
         blockStateModelGenerator.registerLog(ModBlocks.AEROWOOD_LOG).log(ModBlocks.AEROWOOD_LOG).wood(ModBlocks.AEROWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AEROWOOD_LOG).log(ModBlocks.STRIPPED_AEROWOOD_LOG).wood(ModBlocks.STRIPPED_AEROWOOD_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AEROWOOD_LEAVES);
@@ -92,6 +106,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.POWDERED_BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.PLANAR_TUNING_FORK, Models.GENERATED);
         itemModelGenerator.register(ModItems.CURSED_SOULSTONE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BLACK_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUE_STAR_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BROWN_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREEN_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREY_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORANGE_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PINK_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURPLE_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WHITE_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YELLOW_SAPPHIRE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STAR_RUBY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNCUT_CORUNDUM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MOURNSTEEL_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.MOURNSTEEL_AXE, Models.HANDHELD);

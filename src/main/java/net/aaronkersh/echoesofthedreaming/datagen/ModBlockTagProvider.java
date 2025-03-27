@@ -28,7 +28,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VANADINITE_BLOCK)
                 .add(ModBlocks.VANADIUM_BLOCK)
                 .add(ModBlocks.BISMUTH_BLOCK)
-                .add(ModBlocks.BISMUTH_SAND);
+                .add(ModBlocks.BISMUTH_SAND)
+                .add(ModBlocks.VANADINITE_ORE)
+                .add(ModBlocks.VANADINITE_DEEPSLATE_ORE)
+                .add(ModBlocks.VANADINITE_BLOCK)
+                .add(ModBlocks.VANADIUM_BLOCK)
+                .add(ModBlocks.BLACK_SAPPHIRE_BLOCK)
+                .add(ModBlocks.BLUE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.BROWN_SAPPHIRE_BLOCK)
+                .add(ModBlocks.GREEN_SAPPHIRE_BLOCK)
+                .add(ModBlocks.GREY_SAPPHIRE_BLOCK)
+                .add(ModBlocks.ORANGE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.PINK_SAPPHIRE_BLOCK)
+                .add(ModBlocks.PURPLE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.WHITE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.YELLOW_SAPPHIRE_BLOCK)
+                .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.CORUNDUM_ORE)
+                .add(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BISMUTH_BLOCK);
@@ -37,7 +54,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VANADINITE_ORE)
                 .add(ModBlocks.VANADINITE_DEEPSLATE_ORE)
                 .add(ModBlocks.VANADINITE_BLOCK)
-                .add(ModBlocks.VANADIUM_BLOCK);
+                .add(ModBlocks.VANADIUM_BLOCK)
+                .add(ModBlocks.BLACK_SAPPHIRE_BLOCK)
+                .add(ModBlocks.BLUE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.BROWN_SAPPHIRE_BLOCK)
+                .add(ModBlocks.GREEN_SAPPHIRE_BLOCK)
+                .add(ModBlocks.GREY_SAPPHIRE_BLOCK)
+                .add(ModBlocks.ORANGE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.PINK_SAPPHIRE_BLOCK)
+                .add(ModBlocks.PURPLE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.WHITE_SAPPHIRE_BLOCK)
+                .add(ModBlocks.YELLOW_SAPPHIRE_BLOCK)
+                .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.CORUNDUM_ORE)
+                .add(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MOURNCRYST_ORE)
