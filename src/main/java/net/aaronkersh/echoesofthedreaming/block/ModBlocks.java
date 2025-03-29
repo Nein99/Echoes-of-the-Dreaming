@@ -25,7 +25,7 @@ public class ModBlocks {
     public static final Block MOURNCRYST_BLOCK = registerBlock("mourncryst_block",
             RadioactiveBlocks.createStrongRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE).ticksRandomly()));
     public static final Block MOURNCRYST_BLACKENED_BLOCK = registerBlock("mourncryst_blackened_block",
-            RadioactiveBlocks.createMediumRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.METAL).ticksRandomly()));
+            RadioactiveBlocks.createStrongRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.METAL).ticksRandomly()));
     public static final Block MOURNCRYST_ORE = registerBlock("mourncryst_ore",
             RadioactiveBlocks.createWeakRadioactiveBlock(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.STONE).ticksRandomly()));
     public static final Block MOURNCRYST_DEEPSLATE_ORE = registerBlock("mourncryst_deepslate_ore",
