@@ -107,6 +107,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PLANAR_TUNING_FORK, Models.GENERATED);
         itemModelGenerator.register(ModItems.CURSED_SOULSTONE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.POWDERED_IRON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POWDERED_TITANIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POWDERED_CHROMIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POWDERED_VANADIUM, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.BLACK_SAPPHIRE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLUE_SAPPHIRE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLUE_STAR_SAPPHIRE, Models.GENERATED);

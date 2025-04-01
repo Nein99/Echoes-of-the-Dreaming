@@ -46,6 +46,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BISMUTH_SAND);
                         entries.add(ModBlocks.BISMUTH_CRYSTALSEED);
 
+                        entries.add(ModItems.POWDERED_IRON);
+                        entries.add(ModItems.POWDERED_TITANIUM);
+                        entries.add(ModItems.POWDERED_CHROMIUM);
+                        entries.add(ModItems.POWDERED_VANADIUM);
+
                         entries.add(ModBlocks.CORUNDUM_ORE);
                         entries.add(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
                         entries.add(ModItems.UNCUT_CORUNDUM);

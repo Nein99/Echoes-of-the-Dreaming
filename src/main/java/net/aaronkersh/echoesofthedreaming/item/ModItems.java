@@ -26,8 +26,16 @@ public class ModItems {
     public static final Item BISMUTH = registerItem("bismuth", new Item(new FabricItemSettings()));
     public static final Item BISMUTH_NUGGET = registerItem("bismuth_nugget", new Item(new FabricItemSettings()));
     public static final Item POWDERED_BISMUTH = registerItem("powdered_bismuth", new Item(new FabricItemSettings()));
-    public static final Item PLANAR_TUNING_FORK = registerItem("planar_tuning_fork", new Item(new FabricItemSettings()));
     public static final Item CURSED_SOULSTONE = registerItem("cursed_soulstone", new Item(new FabricItemSettings()));
+
+    public static final Item PLANAR_TUNING_FORK = registerItem("planar_tuning_fork",
+            new PlanarTuningForkItem(new FabricItemSettings()));
+
+    public static final Item POWDERED_IRON = registerItem("powdered_iron", new Item(new FabricItemSettings()));
+    public static final Item POWDERED_TITANIUM = registerItem("powdered_titanium", new Item(new FabricItemSettings()));
+    public static final Item POWDERED_CHROMIUM = registerItem("powdered_chromium", new Item(new FabricItemSettings()));
+    public static final Item POWDERED_VANADIUM = registerItem("powdered_vanadium", new Item(new FabricItemSettings()));
+
 
     public static final Item BLACK_SAPPHIRE = registerItem("black_sapphire",
             new Item(new FabricItemSettings()));
