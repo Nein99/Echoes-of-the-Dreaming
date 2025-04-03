@@ -45,7 +45,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.YELLOW_SAPPHIRE_BLOCK)
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.CORUNDUM_ORE)
-                .add(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
+                .add(ModBlocks.CORUNDUM_DEEPSLATE_ORE)
+                .add(ModBlocks.CHROMIUM_ORE)
+                .add(ModBlocks.CHROMIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.TITANIUM_ORE)
+                .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.CHROMIUM_BLOCK)
+                .add(ModBlocks.RAW_CHROMIUM_BLOCK)
+                .add(ModBlocks.TITANIUM_BLOCK)
+                .add(ModBlocks.RAW_TITANIUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.BISMUTH_BLOCK);
@@ -67,7 +75,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.YELLOW_SAPPHIRE_BLOCK)
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.CORUNDUM_ORE)
-                .add(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
+                .add(ModBlocks.CORUNDUM_DEEPSLATE_ORE)
+                .add(ModBlocks.CHROMIUM_ORE)
+                .add(ModBlocks.CHROMIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.TITANIUM_ORE)
+                .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.CHROMIUM_BLOCK)
+                .add(ModBlocks.RAW_CHROMIUM_BLOCK)
+                .add(ModBlocks.TITANIUM_BLOCK)
+                .add(ModBlocks.RAW_TITANIUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MOURNCRYST_ORE)

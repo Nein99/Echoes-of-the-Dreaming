@@ -50,6 +50,24 @@ public class ModBlocks {
     public static final Block BISMUTH_CRYSTALSEED = registerBlock("bismuth_crystalseed",
             new SaplingBlock(new BismuthCrystalseedGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
+    public static final Block CHROMIUM_ORE = registerBlock("chromium_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block CHROMIUM_DEEPSLATE_ORE = registerBlock("chromium_deepslate_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block RAW_CHROMIUM_BLOCK = registerBlock("raw_chromium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block CHROMIUM_BLOCK = registerBlock("chromium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
+
+    public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block TITANIUM_DEEPSLATE_ORE = registerBlock("titanium_deepslate_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).sounds(BlockSoundGroup.STONE)));
+    public static final Block RAW_TITANIUM_BLOCK = registerBlock("raw_titanium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
+    public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.GOLD_BLOCK).sounds(BlockSoundGroup.METAL)));
+
     public static final Block CORUNDUM_ORE = registerBlock("corundum_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE).sounds(BlockSoundGroup.STONE)));
     public static final Block CORUNDUM_DEEPSLATE_ORE = registerBlock("corundum_deepslate_ore",

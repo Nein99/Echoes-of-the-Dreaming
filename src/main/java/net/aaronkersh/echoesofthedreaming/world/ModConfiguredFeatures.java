@@ -20,6 +20,9 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> BISMUTH_ORE_KEY = registerKey("bismuth_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BISMUTH_CRYSTAL_KEY = registerKey("bismuth_crystal");
     public static final RegistryKey<ConfiguredFeature<?, ?>> CORUNDUM_ORE_KEY = registerKey("corundum_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CHROMIUM_ORE_KEY = registerKey("chromium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> TITANIUM_ORE_KEY = registerKey("titanium_ore");
+
 
     public static void registerFeatures() {
         BISMUTH_CRYSTAL_FEATURE = Registry.register(
@@ -51,10 +54,20 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.CORUNDUM_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.CORUNDUM_DEEPSLATE_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldChromiumOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.CHROMIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.CHROMIUM_DEEPSLATE_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldTitaniumOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplacables, ModBlocks.TITANIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplacables, ModBlocks.TITANIUM_DEEPSLATE_ORE.getDefaultState()));
+
         register(context, MOURNCRYST_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMourncrystOres, 1));
         register(context, VANADINITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldVanadiniteOres, 5));
         register(context, BISMUTH_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBismuthOres, 5));
         register(context, CORUNDUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCorundumOres, 5));
+        register(context, CHROMIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldChromiumOres, 5));
+        register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 5));
 
         if (BISMUTH_CRYSTAL_FEATURE != null) {
             register(context, BISMUTH_CRYSTAL_KEY, BISMUTH_CRYSTAL_FEATURE,

@@ -14,9 +14,17 @@
   "item.echoesofthedreaming.cursed_soulstone": "Cursed Soulstone",
 
   "item.echoesofthedreaming.powdered_iron": "Powdered Iron",
-  "item.echoesofthedreaming.powdered_titanium": "Powdered Titanium",
-  "item.echoesofthedreaming.powdered_chromium": "Powdered Chromium",
   "item.echoesofthedreaming.powdered_vanadium": "Powdered Vanadium",
+
+  "item.echoesofthedreaming.raw_chromium": "Raw Chromium",
+  "item.echoesofthedreaming.chromium_ingot": "Chromium Ingot",
+  "item.echoesofthedreaming.chromium_nugget": "Chromium Nugget",
+  "item.echoesofthedreaming.powdered_chromium": "Powdered Chromium",
+
+  "item.echoesofthedreaming.raw_titanium": "Raw Titanium",
+  "item.echoesofthedreaming.titanium_ingot": "Titanium Ingot",
+  "item.echoesofthedreaming.titanium_nugget": "Titanium Nugget",
+  "item.echoesofthedreaming.powdered_titanium": "Powdered Titanium",
 
 
   "item.echoesofthedreaming.mournsteel_sword": "Mournsteel Sword",
@@ -53,7 +61,7 @@
   "block.echoesofthedreaming.mourncryst_deepslate_ore": "Deepslate Mourncryst Ore",
   "block.echoesofthedreaming.vanadinite_ore": "Vanadinite Ore",
   "block.echoesofthedreaming.vanadinite_deepslate_ore": "Deepslate Vanadinite Ore",
-  "block.echoesofthedreaming.bismuth_ore": "Vanadinite Ore",
+  "block.echoesofthedreaming.bismuth_ore": "Bismuth Ore",
   "block.echoesofthedreaming.bismuth_deepslate_ore": "Deepslate Bismuth Ore",
   "block.echoesofthedreaming.vanadinite_block": "Block of Vanadinite",
   "block.echoesofthedreaming.vanadium_block": "Block of Vanadium",
@@ -61,6 +69,16 @@
   "block.echoesofthedreaming.bismuth_sand": "Bismuth Sand",
 
   "block.echoesofthedreaming.bismuth_crystalseed": "Bismuth Crystalseed",
+
+  "block.echoesofthedreaming.chromium_ore": "Chromium Ore",
+  "block.echoesofthedreaming.chromium_deepslate_ore": "Deepslate Chromium Ore",
+  "block.echoesofthedreaming.chromium_block": "Block of Chromium",
+  "block.echoesofthedreaming.raw_chromium_block": "Block of Raw Chromium",
+
+  "block.echoesofthedreaming.titanium_ore": "Titanium Ore",
+  "block.echoesofthedreaming.titanium_deepslate_ore": "Deepslate Titanium Ore",
+  "block.echoesofthedreaming.titanium_block": "Block of Titanium",
+  "block.echoesofthedreaming.raw_titanium_block": "Block of Raw Titanium",
 
   "item.echoesofthedreaming.black_sapphire": "Black Sapphire",
   "item.echoesofthedreaming.blue_sapphire": "Blue Sapphire",
@@ -141,7 +159,8 @@
   "block.echoesofthedreaming.sunbeam_hanging_sign": "Sunbeam Hanging Sign",
   "block.echoesofthedreaming.sunbeam_wall_hanging_sign": "Sunbeam Wall Hanging Sign",
 
-  "itemgroup.echoesofthedreaming": "EotD: Akáhn",
+  "itemgroup.minerals": "EotD: Minerals",
+  "itemgroup.akahn": "EotD: Akáhn",
   "itemgroup.elementalplanes": "EotD: Elemental Planes",
 
   "effect.echoesofthedreaming.malignant_aura": "Malignant Aura",

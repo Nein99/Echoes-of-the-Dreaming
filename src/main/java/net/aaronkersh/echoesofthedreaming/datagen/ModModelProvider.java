@@ -36,6 +36,17 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.BISMUTH_CRYSTALSEED, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHROMIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHROMIUM_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_DEEPSLATE_ORE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHROMIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_CHROMIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TITANIUM_BLOCK);
+
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORUNDUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_SAPPHIRE_BLOCK);
@@ -108,8 +119,17 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CURSED_SOULSTONE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.POWDERED_IRON, Models.GENERATED);
-        itemModelGenerator.register(ModItems.POWDERED_TITANIUM, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CHROMIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHROMIUM_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_CHROMIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.POWDERED_CHROMIUM, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.TITANIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TITANIUM_NUGGET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_TITANIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POWDERED_TITANIUM, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.POWDERED_VANADIUM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.BLACK_SAPPHIRE, Models.GENERATED);

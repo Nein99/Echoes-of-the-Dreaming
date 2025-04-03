@@ -11,45 +11,10 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup ECHOESOFTHEDREAMING_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(EchoesOfTheDreaming.MOD_ID, "echoesofthedreaming"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.echoesofthedreaming"))
-                    .icon(() -> new ItemStack(ModItems.MOURNSTEEL_INGOT)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.MOURNCRYST);
-                        entries.add(ModItems.MOURNCRYST_BLACKENED);
-                        entries.add(ModItems.MOURNSTEEL_INGOT);
-                        entries.add(ModItems.MOURNSTEEL_NUGGET);
-
-                        entries.add(ModBlocks.MOURNCRYST_ORE);
-                        entries.add(ModBlocks.MOURNCRYST_DEEPSLATE_ORE);
-                        entries.add(ModBlocks.MOURNCRYST_BLOCK);
-                        entries.add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
-                        entries.add(ModBlocks.MOURNSTEEL_BLOCK);
-
-                        entries.add(ModItems.VANADINITE);
-                        entries.add(ModBlocks.VANADINITE_ORE);
-                        entries.add(ModBlocks.VANADINITE_DEEPSLATE_ORE);
-                        entries.add(ModBlocks.VANADINITE_BLOCK);
-                        entries.add(ModItems.VANADIUM_PENTOXIDE);
-
-                        entries.add(ModItems.VANADIUM);
-                        entries.add(ModBlocks.VANADIUM_BLOCK);
-
-                        entries.add(ModBlocks.BISMUTH_ORE);
-                        entries.add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
-
-                        entries.add(ModItems.RAW_BISMUTH);
-                        entries.add(ModItems.BISMUTH);
-                        entries.add(ModItems.BISMUTH_NUGGET);
-                        entries.add(ModBlocks.BISMUTH_BLOCK);
-                        entries.add(ModItems.POWDERED_BISMUTH);
-                        entries.add(ModBlocks.BISMUTH_SAND);
-                        entries.add(ModBlocks.BISMUTH_CRYSTALSEED);
-
-                        entries.add(ModItems.POWDERED_IRON);
-                        entries.add(ModItems.POWDERED_TITANIUM);
-                        entries.add(ModItems.POWDERED_CHROMIUM);
-                        entries.add(ModItems.POWDERED_VANADIUM);
+    public static final ItemGroup MINERALS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(EchoesOfTheDreaming.MOD_ID, "minerals"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.minerals"))
+                    .icon(() -> new ItemStack(ModItems.BLUE_SAPPHIRE)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.CORUNDUM_ORE);
                         entries.add(ModBlocks.CORUNDUM_DEEPSLATE_ORE);
@@ -81,14 +46,43 @@ public class ModItemGroups {
                         entries.add(ModBlocks.WHITE_SAPPHIRE_BLOCK);
                         entries.add(ModBlocks.YELLOW_SAPPHIRE_BLOCK);
 
-                        entries.add(ModItems.PLANAR_TUNING_FORK);
-                        entries.add(ModItems.CURSED_SOULSTONE);
+                        entries.add(ModBlocks.CHROMIUM_ORE);
+                        entries.add(ModBlocks.CHROMIUM_DEEPSLATE_ORE);
+                        entries.add(ModItems.RAW_CHROMIUM);
+                        entries.add(ModBlocks.RAW_CHROMIUM_BLOCK);
+                        entries.add(ModItems.CHROMIUM_INGOT);
+                        entries.add(ModItems.CHROMIUM_NUGGET);
+                        entries.add(ModItems.POWDERED_CHROMIUM);
+                        entries.add(ModBlocks.CHROMIUM_BLOCK);
 
-                        entries.add(ModItems.MOURNSTEEL_PICKAXE);
-                        entries.add(ModItems.MOURNSTEEL_AXE);
-                        entries.add(ModItems.MOURNSTEEL_SHOVEL);
-                        entries.add(ModItems.MOURNSTEEL_SWORD);
-                        entries.add(ModItems.MOURNSTEEL_HOE);
+                        entries.add(ModBlocks.TITANIUM_ORE);
+                        entries.add(ModBlocks.TITANIUM_DEEPSLATE_ORE);
+                        entries.add(ModItems.RAW_TITANIUM);
+                        entries.add(ModBlocks.RAW_TITANIUM_BLOCK);
+                        entries.add(ModItems.TITANIUM_INGOT);
+                        entries.add(ModItems.TITANIUM_NUGGET);
+                        entries.add(ModItems.POWDERED_TITANIUM);
+                        entries.add(ModBlocks.TITANIUM_BLOCK);
+
+                        entries.add(ModBlocks.VANADINITE_ORE);
+                        entries.add(ModBlocks.VANADINITE_DEEPSLATE_ORE);
+                        entries.add(ModItems.VANADINITE);
+                        entries.add(ModItems.VANADIUM_PENTOXIDE);
+                        entries.add(ModBlocks.VANADINITE_BLOCK);
+                        entries.add(ModItems.VANADIUM);
+                        entries.add(ModItems.POWDERED_VANADIUM);
+                        entries.add(ModBlocks.VANADIUM_BLOCK);
+
+                        entries.add(ModBlocks.BISMUTH_ORE);
+                        entries.add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                        entries.add(ModItems.RAW_BISMUTH);
+                        entries.add(ModItems.BISMUTH);
+                        entries.add(ModItems.BISMUTH_NUGGET);
+                        entries.add(ModItems.POWDERED_BISMUTH);
+                        entries.add(ModBlocks.BISMUTH_BLOCK);
+                        entries.add(ModBlocks.BISMUTH_SAND);
+
+                        entries.add(ModItems.POWDERED_IRON);
 
                         entries.add(ModItems.BISMUTH_PICKAXE);
                         entries.add(ModItems.BISMUTH_AXE);
@@ -100,6 +94,34 @@ public class ModItemGroups {
                         entries.add(ModItems.BISMUTH_CHESTPLATE);
                         entries.add(ModItems.BISMUTH_LEGGINGS);
                         entries.add(ModItems.BISMUTH_BOOTS);
+
+                    }).build());
+
+    public static final ItemGroup AKAHN_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(EchoesOfTheDreaming.MOD_ID, "akahn"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.akahn"))
+                    .icon(() -> new ItemStack(ModItems.MOURNSTEEL_INGOT)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.MOURNCRYST);
+                        entries.add(ModItems.MOURNCRYST_BLACKENED);
+                        entries.add(ModItems.MOURNSTEEL_INGOT);
+                        entries.add(ModItems.MOURNSTEEL_NUGGET);
+
+                        entries.add(ModBlocks.MOURNCRYST_ORE);
+                        entries.add(ModBlocks.MOURNCRYST_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.MOURNCRYST_BLOCK);
+                        entries.add(ModBlocks.MOURNCRYST_BLACKENED_BLOCK);
+                        entries.add(ModBlocks.MOURNSTEEL_BLOCK);
+
+                        entries.add(ModBlocks.BISMUTH_CRYSTALSEED);
+
+                        entries.add(ModItems.PLANAR_TUNING_FORK);
+                        entries.add(ModItems.CURSED_SOULSTONE);
+
+                        entries.add(ModItems.MOURNSTEEL_PICKAXE);
+                        entries.add(ModItems.MOURNSTEEL_AXE);
+                        entries.add(ModItems.MOURNSTEEL_SHOVEL);
+                        entries.add(ModItems.MOURNSTEEL_SWORD);
+                        entries.add(ModItems.MOURNSTEEL_HOE);
 
                         entries.add(ModItems.MOURNING_OREWALKER_SPAWN_EGG);
                         entries.add(ModItems.BISMUTH_OREWALKER_SPAWN_EGG);

@@ -42,6 +42,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BISMUTH_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.BISMUTH_DEEPSLATE_ORE, ModItems.RAW_BISMUTH));
         addDrop(ModBlocks.CORUNDUM_ORE, copperLikeOreDrops(ModBlocks.CORUNDUM_ORE, ModItems.UNCUT_CORUNDUM));
         addDrop(ModBlocks.CORUNDUM_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.CORUNDUM_DEEPSLATE_ORE, ModItems.UNCUT_CORUNDUM));
+        addDrop(ModBlocks.CHROMIUM_ORE, copperLikeOreDrops(ModBlocks.CHROMIUM_ORE, ModItems.RAW_CHROMIUM));
+        addDrop(ModBlocks.CHROMIUM_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.CHROMIUM_DEEPSLATE_ORE, ModItems.RAW_CHROMIUM));
+        addDrop(ModBlocks.TITANIUM_ORE, copperLikeOreDrops(ModBlocks.TITANIUM_ORE, ModItems.RAW_TITANIUM));
+        addDrop(ModBlocks.TITANIUM_DEEPSLATE_ORE, copperLikeOreDrops(ModBlocks.TITANIUM_DEEPSLATE_ORE, ModItems.RAW_TITANIUM));
 
         addDrop(ModBlocks.BLACK_SAPPHIRE_BLOCK);
         addDrop(ModBlocks.BLUE_SAPPHIRE_BLOCK);
@@ -53,6 +57,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PURPLE_SAPPHIRE_BLOCK);
         addDrop(ModBlocks.WHITE_SAPPHIRE_BLOCK);
         addDrop(ModBlocks.YELLOW_SAPPHIRE_BLOCK);
+
+        addDrop(ModBlocks.CHROMIUM_BLOCK);
+        addDrop(ModBlocks.RAW_CHROMIUM_BLOCK);
+        addDrop(ModBlocks.TITANIUM_BLOCK);
+        addDrop(ModBlocks.RAW_TITANIUM_BLOCK);
 
         addDrop(ModBlocks.AEROWOOD_LOG);
         addDrop(ModBlocks.AEROWOOD_WOOD);

@@ -31,6 +31,14 @@ public class ModItems {
     public static final Item PLANAR_TUNING_FORK = registerItem("planar_tuning_fork",
             new PlanarTuningForkItem(new FabricItemSettings()));
 
+    public static final Item CHROMIUM_INGOT = registerItem("chromium_ingot", new Item(new FabricItemSettings()));
+    public static final Item CHROMIUM_NUGGET = registerItem("chromium_nugget", new Item(new FabricItemSettings()));
+    public static final Item RAW_CHROMIUM = registerItem("raw_chromium", new Item(new FabricItemSettings()));
+
+    public static final Item TITANIUM_INGOT = registerItem("titanium_ingot", new Item(new FabricItemSettings()));
+    public static final Item TITANIUM_NUGGET = registerItem("titanium_nugget", new Item(new FabricItemSettings()));
+    public static final Item RAW_TITANIUM = registerItem("raw_titanium", new Item(new FabricItemSettings()));
+
     public static final Item POWDERED_IRON = registerItem("powdered_iron", new Item(new FabricItemSettings()));
     public static final Item POWDERED_TITANIUM = registerItem("powdered_titanium", new Item(new FabricItemSettings()));
     public static final Item POWDERED_CHROMIUM = registerItem("powdered_chromium", new Item(new FabricItemSettings()));
